@@ -9,27 +9,20 @@
 	import * as Avatar from "$lib/components/ui/avatar/index.js";
 	import { mapStates, pathEntries } from "$lib/config/mapStates.js";
 	import mapStyleJson from "./map-style.json";
+	import holmesIcon from "/map/sprite/icons/holmes.png";
+	import watsonIcon from "/map/sprite/icons/watson.png";
+	import jabezIcon from "/map/sprite/icons/jabez.png";
+	import jonesIcon from "/map/sprite/icons/jones.png";
+	import merryweatherIcon from "/map/sprite/icons/merryweather.png";
 
 	const icons: Record<string, string[]> = {
-		"path-jabez-commute": ["/map/sprite/icons/jabez.png"],
-		"path-holmes-watson-afternoon": [
-			"/map/sprite/icons/holmes.png",
-			"/map/sprite/icons/watson.png",
-		],
-		"path-holmes-day": ["/map/sprite/icons/holmes.png"],
-		"path-watson-day": ["/map/sprite/icons/watson.png"],
-		"path-watson-night": ["/map/sprite/icons/watson.png"],
-		"path-whole-party": [
-			"/map/sprite/icons/holmes.png",
-			"/map/sprite/icons/watson.png",
-			"/map/sprite/icons/merryweather.png",
-			"/map/sprite/icons/jones.png",
-		],
-		"paths-all": [
-			"/map/sprite/icons/holmes.png",
-			"/map/sprite/icons/watson.png",
-			"/map/sprite/icons/jabez.png",
-		],
+		"path-jabez-commute": [jabezIcon],
+		"path-holmes-watson-afternoon": [holmesIcon, watsonIcon],
+		"path-holmes-day": [holmesIcon],
+		"path-watson-day": [watsonIcon],
+		"path-watson-night": [watsonIcon],
+		"path-whole-party": [holmesIcon, watsonIcon, merryweatherIcon, jonesIcon],
+		"paths-all": [holmesIcon, watsonIcon, jabezIcon],
 	};
 
 	let currentState = $state(mapStates[0]);
@@ -158,7 +151,7 @@
 									<Avatar.Root
 										class="size-5 border border-vintage-parchment/50"
 									>
-										<Avatar.Image src={icon} alt="" />
+										<Avatar.Image src={icon} alt="Character icon" />
 									</Avatar.Root>
 								{/each}
 							</div>
@@ -184,7 +177,7 @@
 					<div class="flex -space-x-1.5">
 						{#each icons["paths-all"] as icon}
 							<Avatar.Root class="size-5 border border-vintage-navy-dark/50">
-								<Avatar.Image src={icon} alt="" />
+								<Avatar.Image src={icon} alt="Character icon" />
 							</Avatar.Root>
 						{/each}
 					</div>

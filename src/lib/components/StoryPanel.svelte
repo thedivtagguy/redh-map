@@ -1,5 +1,15 @@
 <script lang="ts">
 	import { mapStates } from "$lib/config/mapStates.js";
+	import jabezWilson from "$lib/assets/538px-The-strand-magazine-1891-08-the-red-headed-league-p190-illu.jpg";
+	import holmesExamining from "$lib/assets/446px-The-strand-magazine-1891-08-the-red-headed-league-p192-illu.jpg";
+	import fleetStreetCrowd from "$lib/assets/504px-The-strand-magazine-1891-08-the-red-headed-league-p193-illu.jpg";
+	import holmesWatsonDiscussing from "$lib/assets/473px-The-strand-magazine-1891-08-the-red-headed-league-p194-illu.jpg";
+	import wilsonCopying from "$lib/assets/336px-The-strand-magazine-1891-08-the-red-headed-league-p196-illu.jpg";
+	import holmesCurled from "$lib/assets/318px-The-strand-magazine-1891-08-the-red-headed-league-p197-illu.jpg";
+	import holmesInspector from "$lib/assets/380px-The-strand-magazine-1891-08-the-red-headed-league-p198-illu.jpg";
+	import waitingDarkness from "$lib/assets/312px-The-strand-magazine-1891-08-the-red-headed-league-p199-illu.jpg";
+	import clayEmerging from "$lib/assets/282px-The-strand-magazine-1891-08-the-red-headed-league-p201-illu.jpg";
+	import holmesCaptures from "$lib/assets/414px-The-strand-magazine-1891-08-the-red-headed-league-p203-illu.jpg";
 
 	let {
 		onStateChange = () => {},
@@ -31,8 +41,8 @@
 
 		<figure class="my-6 text-center">
 			<img
-				src="/src/lib/assets/538px-The-strand-magazine-1891-08-the-red-headed-league-p190-illu.jpg"
-				alt="Mr. Jabez Wilson with fiery red hair"
+				src={jabezWilson}
+				alt="Victorian illustration of Mr. Jabez Wilson, a stout gentleman with striking fiery red hair, wearing a frock-coat and waistcoat"
 				class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 				style="max-height: 400px; filter: sepia(0.2);"
 			/>
@@ -92,8 +102,8 @@
 		</section>
 		<figure class="my-6 text-center">
 			<img
-				src="/src/lib/assets/446px-The-strand-magazine-1891-08-the-red-headed-league-p192-illu.jpg"
-				alt="Holmes examining Mr. Wilson"
+				src={holmesExamining}
+				alt="Victorian illustration showing Sherlock Holmes carefully examining Mr. Wilson while Watson and Wilson look on in Holmes' Baker Street study"
 				class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 				style="max-height: 400px; filter: sepia(0.2);"
 			/>
@@ -161,8 +171,8 @@
 			<p>"What is the name of this obliging youth?" asked Sherlock Holmes.</p>
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/504px-The-strand-magazine-1891-08-the-red-headed-league-p193-illu.jpg"
-					alt="Fleet Street crowded with red-headed men"
+					src={fleetStreetCrowd}
+					alt="Victorian illustration depicting Fleet Street and Pope's Court filled with dozens of red-headed men responding to the League advertisement"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -206,8 +216,8 @@
 			</p>
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/473px-The-strand-magazine-1891-08-the-red-headed-league-p194-illu.jpg"
-					alt="Holmes and Watson discussing the case"
+					src={holmesWatsonDiscussing}
+					alt="Victorian illustration of Duncan Ross congratulating Mr. Wilson after examining his red hair at the offices of the Red-Headed League"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -269,8 +279,8 @@
 
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/336px-The-strand-magazine-1891-08-the-red-headed-league-p196-illu.jpg"
-					alt="Wilson copying the Encyclopedia"
+					src={wilsonCopying}
+					alt="Victorian illustration showing Mr. Wilson discovering the closed and locked door of the Red-Headed League office with a dissolution notice posted"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -320,8 +330,8 @@
 
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/318px-The-strand-magazine-1891-08-the-red-headed-league-p197-illu.jpg"
-					alt="Holmes thumping the pavement with his stick"
+					src={holmesCurled}
+					alt="Victorian illustration of Sherlock Holmes curled up in his chair at Baker Street, deep in thought while smoking his pipe during this three-pipe problem"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -391,8 +401,8 @@
 			</p>
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/380px-The-strand-magazine-1891-08-the-red-headed-league-p198-illu.jpg"
-					alt="Holmes with Inspector Jones and Mr. Merryweather"
+					src={holmesInspector}
+					alt="Victorian illustration showing the bright-looking young assistant Vincent Spaulding instantly opening the door when Holmes knocked at the pawnbroker's shop"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -424,8 +434,8 @@
 
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/312px-The-strand-magazine-1891-08-the-red-headed-league-p199-illu.jpg"
-					alt="Waiting in the darkness of the bank cellar"
+					src={waitingDarkness}
+					alt="Victorian illustration of Holmes sitting in the concert hall stalls at St. James's Hall, enjoying Sarasate's violin performance"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -512,8 +522,8 @@
 
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/282px-The-strand-magazine-1891-08-the-red-headed-league-p201-illu.jpg"
-					alt="John Clay emerging from the tunnel"
+					src={clayEmerging}
+					alt="Victorian illustration of Mr. Merryweather lighting a lantern in the dark bank cellar as the group waits in darkness for the thieves"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
@@ -551,8 +561,8 @@
 
 			<figure class="my-6 text-center">
 				<img
-					src="/src/lib/assets/414px-The-strand-magazine-1891-08-the-red-headed-league-p203-illu.jpg"
-					alt="Holmes captures John Clay"
+					src={holmesCaptures}
+					alt="Victorian illustration of Sherlock Holmes capturing John Clay as he emerges from the tunnel in the bank cellar, with Inspector Jones grabbing his accomplice"
 					class="mx-auto max-w-full h-auto border-2 border-vintage-brown/30 shadow-lg"
 					style="max-height: 400px; filter: sepia(0.2);"
 				/>
