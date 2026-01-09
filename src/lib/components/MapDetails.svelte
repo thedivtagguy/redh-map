@@ -50,7 +50,7 @@
           <dd
             class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5"
           >
-            London Sheet VII, 1893 Revision via National Library of Scotland
+            London Sheet VII, 1893 Revision via <a href="http://maps.nls.uk/projects/subscription-api/" class="text-vintage-crimson hover:underline">National Library of Scotland</a>
           </dd>
         </div>
 
