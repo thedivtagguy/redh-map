@@ -617,7 +617,7 @@
       "type": "line",
       "source": "london-custom",
       "source-layer": "railways",
-      "minzoom": 11,
+      "minzoom": 0,
       "maxzoom": 24,
       "layout": {"visibility": "visible"},
       "paint": {
@@ -640,11 +640,11 @@
         },
         "line-opacity": {
           "stops": [
-            [11, 0.2],
-            [13, 0.4],
-            [14, 0.5],
-            [16, 0.4],
-            [18, 0.3]
+            [11, 0.8],
+            [13, 0.9],
+            [14, 0.95],
+            [16, 0.9],
+            [18, 0.85]
           ]
         }
       }
@@ -654,7 +654,7 @@
       "type": "line",
       "source": "london-custom",
       "source-layer": "railways",
-      "minzoom": 15,
+      "minzoom": 0,
       "maxzoom": 24,
       "layout": {"visibility": "visible"},
       "paint": {
@@ -675,9 +675,9 @@
         },
         "line-opacity": {
           "stops": [
-            [15, 0.5],
-            [17, 0.4],
-            [19, 0.3]
+            [15, 0.9],
+            [17, 0.85],
+            [19, 0.8]
           ]
         }
       }
@@ -687,11 +687,11 @@
       "type": "fill",
       "source": "london-custom",
       "source-layer": "platforms",
-      "minzoom": 15,
+      "minzoom": 0,
       "maxzoom": 24,
       "paint": {
         "fill-pattern": "station",
-        "fill-opacity": {"stops": [[15, 0.3], [17, 0.3], [20, 0.3]]}
+        "fill-opacity": {"stops": [[15, 0.8], [17, 0.85], [20, 0.9]]}
       }
     },
     {
@@ -699,13 +699,13 @@
       "type": "line",
       "source": "london-custom",
       "source-layer": "platforms",
-      "minzoom": 15,
+      "minzoom": 0,
       "maxzoom": 24,
       "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
         "line-color": "#3b230b",
-        "line-width": {"stops": [[15, 1], [17, 1.5], [20, 2]]},
-        "line-opacity": 0.5
+        "line-width": {"stops": [[0, 0.3], [8, 0.5], [12, 0.7], [15, 1], [17, 1.5], [20, 2]]},
+        "line-opacity": {"stops": [[0, 0], [8,0], [12, 0], [15, 1], [17, 1], [20,1]]}
       }
     },
     {
