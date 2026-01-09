@@ -13,7 +13,7 @@
 
     <div class="mt-3">
       <a
-        href="https://aman.bh/blog/2025/mapping-the-red-headed-league"
+        href="https://aman.bh/blog/2026/mapping-the-red-headed-league"
         class="group inline-flex flex-col items-center"
       >
         <span

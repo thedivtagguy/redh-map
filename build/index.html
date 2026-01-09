@@ -5,282 +5,994 @@
 	<base href="https://redh-map.netlify.app" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-		<link href="./_app/immutable/assets/0.BiB8gXoL.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.DDUhjUM9.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.t2gi1oPZ.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CO8ffqWB.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BFFIV0eo.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BXdBLV5W.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/rTsglJ5k.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.KniQMWZE.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BB1XCL_i.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/1xIcMXM1.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DSp6iCUK.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/C7DcEVSO.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.CGgmd9fd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CPoCpbtK.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.BBrH40BY.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BwAqNMIX.js"><!--12qhfyh--><link rel="icon" href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='107'%20height='128'%20viewBox='0%200%20107%20128'%3e%3ctitle%3esvelte-logo%3c/title%3e%3cpath%20d='M94.157%2022.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282%2029.608A29.92%2029.92%200%200%200%208.764%2049.65a31.5%2031.5%200%200%200%203.108%2020.231%2030%2030%200%200%200-4.477%2011.183%2031.9%2031.9%200%200%200%205.448%2024.116c10.402%2014.887%2030.942%2019.297%2045.791%209.835l26.083-16.624A29.92%2029.92%200%200%200%2098.235%2078.35a31.53%2031.53%200%200%200-3.105-20.232%2030%2030%200%200%200%204.474-11.182%2031.88%2031.88%200%200%200-5.447-24.116'%20style='fill:%23ff3e00'/%3e%3cpath%20d='M45.817%20106.582a20.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.503%2018%2018%200%200%201%20.624-2.435l.49-1.498%201.337.981a33.6%2033.6%200%200%200%2010.203%205.098l.97.294-.09.968a5.85%205.85%200%200%200%201.052%203.878%206.24%206.24%200%200%200%206.695%202.485%205.8%205.8%200%200%200%201.603-.704L69.27%2076.28a5.43%205.43%200%200%200%202.45-3.631%205.8%205.8%200%200%200-.987-4.371%206.24%206.24%200%200%200-6.698-2.487%205.7%205.7%200%200%200-1.6.704l-9.953%206.345a19%2019%200%200%201-5.296%202.326%2020.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.502%2017.99%2017.99%200%200%201%208.13-12.052l26.081-16.623a19%2019%200%200%201%205.3-2.329%2020.72%2020.72%200%200%201%2022.237%208.243%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-.624%202.435l-.49%201.498-1.337-.98a33.6%2033.6%200%200%200-10.203-5.1l-.97-.294.09-.968a5.86%205.86%200%200%200-1.052-3.878%206.24%206.24%200%200%200-6.696-2.485%205.8%205.8%200%200%200-1.602.704L37.73%2051.72a5.42%205.42%200%200%200-2.449%203.63%205.79%205.79%200%200%200%20.986%204.372%206.24%206.24%200%200%200%206.698%202.486%205.8%205.8%200%200%200%201.602-.704l9.952-6.342a19%2019%200%200%201%205.295-2.328%2020.72%2020.72%200%200%201%2022.237%208.242%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-8.13%2012.053l-26.081%2016.622a19%2019%200%200%201-5.3%202.328'%20style='fill:%23fff'/%3e%3c/svg%3e"/><!----><!--1uha8ag--><link href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><!----><!--7sr3eb--><!--[--><!--]--> <!--[--><meta name="description" content="A map visualization of the movements and locations from 'The Red-Headed League'"/><!--]--> <!--[--><link rel="canonical" href="https://aman.bh/projects/red-headed-league"/><!--]--> <!--[--><meta name="keywords" content="Sherlock Holmes, Red-Headed League, Victorian London, interactive map, 1890s London, literary cartography, Arthur Conan Doyle, historical maps, Baker Street"/><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <meta name="robots" content="index,follow"/> <meta name="googlebot" content="index,follow"/> <!--[!--><!--]--> <!--[!--><!--]--> <!--[--><!--[--><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Mapping The Red-Headed League"/><meta name="twitter:description" content="A map visualization of the movements and locations from 'The Red-Headed League'"/><meta name="twitter:image" content="https://aman.bh/projects/red-headed-league/og-image.png"/><meta name="twitter:image:alt" content="Interactive map showing the paths of characters from The Red-Headed League"/><!--]--><!--]--> <!--[--><!--[--><!--[--><!--[!--><!--[--><meta property="og:title" content="Mapping The Red-Headed League"/><!--]--><!--]--><!--[!--><!--[--><meta property="og:description" content="A map visualization of the movements and locations from 'The Red-Headed League'"/><!--]--><!--]--><!--[!--><!--[--><meta property="og:url" content="https://aman.bh/projects/red-headed-league"/><!--]--><!--]--><!--[!--><!--[--><meta property="og:type" content="website"/><!--]--><!--]--><!--[!--><!--[!--><!--[--><!--[--><!--[--><!--[--><meta property="og:image:url" content="https://aman.bh/projects/red-headed-league/og-image.png"/><!--]--><!--[--><meta property="og:image:width" content="1200"/><!--]--><!--[--><meta property="og:image:height" content="630"/><!--]--><!--[--><meta property="og:image:alt" content="Mapping The Red-Headed League - Interactive Map"/><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!--[!--><!--[--><meta property="og:site_name" content="Mapping The Red-Headed League"/><!--]--><!--]--><!--]--><!--]--><!--]--> <!--[--><!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mapping The Red-Headed League","description":"A map visualization of the movements and locations from 'The Red-Headed League'","url":"https://aman.bh/projects/red-headed-league","author":{"@type":"Person","name":"Aman Bhargava","url":"https://aman.bh"},"about":{"@type":"CreativeWork","name":"The Red-Headed League","author":{"@type":"Person","name":"Arthur Conan Doyle"},"datePublished":"1891"}}</script><!----><!--]--> <!----><!----><title>Mapping The Red-Headed League | A Cartographic Record of Sherlock Holmes</title>
+
+	<link href="./_app/immutable/assets/0.BiB8gXoL.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/2.DDUhjUM9.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/entry/start.t2gi1oPZ.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/CO8ffqWB.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/BFFIV0eo.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/BXdBLV5W.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/rTsglJ5k.js">
+	<link rel="modulepreload" href="./_app/immutable/entry/app.KniQMWZE.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/BB1XCL_i.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/1xIcMXM1.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/DSp6iCUK.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/C7DcEVSO.js">
+	<link rel="modulepreload" href="./_app/immutable/nodes/0.CGgmd9fd.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/CPoCpbtK.js">
+	<link rel="modulepreload" href="./_app/immutable/nodes/2.BBrH40BY.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/BwAqNMIX.js"><!--12qhfyh-->
+	<link rel="icon"
+		href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='107'%20height='128'%20viewBox='0%200%20107%20128'%3e%3ctitle%3esvelte-logo%3c/title%3e%3cpath%20d='M94.157%2022.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282%2029.608A29.92%2029.92%200%200%200%208.764%2049.65a31.5%2031.5%200%200%200%203.108%2020.231%2030%2030%200%200%200-4.477%2011.183%2031.9%2031.9%200%200%200%205.448%2024.116c10.402%2014.887%2030.942%2019.297%2045.791%209.835l26.083-16.624A29.92%2029.92%200%200%200%2098.235%2078.35a31.53%2031.53%200%200%200-3.105-20.232%2030%2030%200%200%200%204.474-11.182%2031.88%2031.88%200%200%200-5.447-24.116'%20style='fill:%23ff3e00'/%3e%3cpath%20d='M45.817%20106.582a20.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.503%2018%2018%200%200%201%20.624-2.435l.49-1.498%201.337.981a33.6%2033.6%200%200%200%2010.203%205.098l.97.294-.09.968a5.85%205.85%200%200%200%201.052%203.878%206.24%206.24%200%200%200%206.695%202.485%205.8%205.8%200%200%200%201.603-.704L69.27%2076.28a5.43%205.43%200%200%200%202.45-3.631%205.8%205.8%200%200%200-.987-4.371%206.24%206.24%200%200%200-6.698-2.487%205.7%205.7%200%200%200-1.6.704l-9.953%206.345a19%2019%200%200%201-5.296%202.326%2020.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.502%2017.99%2017.99%200%200%201%208.13-12.052l26.081-16.623a19%2019%200%200%201%205.3-2.329%2020.72%2020.72%200%200%201%2022.237%208.243%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-.624%202.435l-.49%201.498-1.337-.98a33.6%2033.6%200%200%200-10.203-5.1l-.97-.294.09-.968a5.86%205.86%200%200%200-1.052-3.878%206.24%206.24%200%200%200-6.696-2.485%205.8%205.8%200%200%200-1.602.704L37.73%2051.72a5.42%205.42%200%200%200-2.449%203.63%205.79%205.79%200%200%200%20.986%204.372%206.24%206.24%200%200%200%206.698%202.486%205.8%205.8%200%200%200%201.602-.704l9.952-6.342a19%2019%200%200%201%205.295-2.328%2020.72%2020.72%200%200%201%2022.237%208.242%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-8.13%2012.053l-26.081%2016.622a19%2019%200%200%201-5.3%202.328'%20style='fill:%23fff'/%3e%3c/svg%3e" />
+	<!----><!--1uha8ag-->
+	<link href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css" rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
+		rel="stylesheet" /><!----><!--7sr3eb--><!--[--><!--]--> <!--[-->
+	<meta name="description" content="A map visualization of the movements and locations from 'The Red-Headed League'" />
+	<!--]--> <!--[-->
+	<link rel="canonical" href="https://aman.bh/projects/red-headed-league" /><!--]--> <!--[-->
+	<meta name="keywords"
+		content="Sherlock Holmes, Red-Headed League, Victorian London, interactive map, 1890s London, literary cartography, Arthur Conan Doyle, historical maps, Baker Street" />
+	<!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]-->
+	<!--[!--><!--]-->
+	<meta name="robots" content="index,follow" />
+	<meta name="googlebot" content="index,follow" /> <!--[!--><!--]--> <!--[!--><!--]--> <!--[--><!--[-->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Mapping The Red-Headed League" />
+	<meta name="twitter:description"
+		content="A map visualization of the movements and locations from 'The Red-Headed League'" />
+	<meta name="twitter:image" content="https://aman.bh/projects/red-headed-league/og-image.jpg" />
+	<meta name="twitter:image:alt" content="Interactive map showing the paths of characters from The Red-Headed League" />
+	<!--]--><!--]--> <!--[--><!--[--><!--[--><!--[!--><!--[-->
+	<meta property="og:title" content="Mapping The Red-Headed League" /><!--]--><!--]--><!--[!--><!--[-->
+	<meta property="og:description"
+		content="A map visualization of the movements and locations from 'The Red-Headed League'" />
+	<!--]--><!--]--><!--[!--><!--[-->
+	<meta property="og:url" content="https://aman.bh/projects/red-headed-league" /><!--]--><!--]--><!--[!--><!--[-->
+	<meta property="og:type" content="website" /><!--]--><!--]--><!--[!--><!--[!--><!--[--><!--[--><!--[--><!--[-->
+	<meta property="og:image:url" content="https://aman.bh/projects/red-headed-league/og-image.jpg" /><!--]--><!--[-->
+	<meta property="og:image:width" content="1200" /><!--]--><!--[-->
+	<meta property="og:image:height" content="630" /><!--]--><!--[-->
+	<meta property="og:image:alt" content="Mapping The Red-Headed League - Interactive Map" />
+	<!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!--[!--><!--[-->
+	<meta property="og:site_name" content="Mapping The Red-Headed League" /><!--]--><!--]--><!--]--><!--]--><!--]-->
+	<!--[--><!---->
+	<script
+		type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mapping The Red-Headed League","description":"A map visualization of the movements and locations from 'The Red-Headed League'","url":"https://aman.bh/projects/red-headed-league","author":{"@type":"Person","name":"Aman Bhargava","url":"https://aman.bh"},"about":{"@type":"CreativeWork","name":"The Red-Headed League","author":{"@type":"Person","name":"Arthur Conan Doyle"},"datePublished":"1891"}}</script>
+	<!----><!--]--> <!----><!---->
+	<title>Mapping The Red-Headed League | A Cartographic Record of Sherlock Holmes</title>
 </head>
 
 <body data-sveltekit-preload-data="hover">
-	<div style="display: contents"><!--[--><!--[--><!----><!----><!---->  <div class="flex flex-col h-screen w-screen overflow-hidden bg-vintage-parchment text-vintage-navy p-[var(--frame-border-width)]"><div class="border-frame"><div class="corner corner-nw"></div> <div class="corner corner-ne"></div> <div class="corner corner-sw"></div> <div class="corner corner-se"></div> <div class="edge edge-n"></div> <div class="edge edge-e"></div> <div class="edge edge-s"></div> <div class="edge edge-w"></div></div> <div class="hidden md:grid grid-cols-[280px_1fr_220px] flex-1 min-h-0 gap-0"><aside class="flex flex-col overflow-hidden border-r border-vintage-navy/30 bg-vintage-parchment"><div class="shrink-0 bg-vintage-navy-dark text-vintage-parchment p-4"><p class="text-[0.55rem] tracking-[0.15em] opacity-70 mb-1">A CARTOGRAPHIC RECORD OF</p> <h1 class="text-lg font-bold leading-tight mb-1">The Red-Headed League</h1> <div class="pt-2 border-t border-vintage-parchment/20"><p class="text-[0.5rem] tracking-[0.1em] opacity-70">ANNO DOMINI</p> <p class="text-2xl font-bold text-vintage-gold">1890</p></div></div> <div class="flex-1 overflow-y-auto"><div class="flex flex-col h-full overflow-y-auto font-[var(--font-playfair)]"><article class="p-3 text-[0.75rem] leading-relaxed text-vintage-navy space-y-3"><p class="text-lg font-bold text-vintage-crimson text-center my-4">"It is a hobby of mine to have an exact knowledge of London."</p> <p class="text-[0.8rem] first-letter:text-2xl first-letter:font-bold first-letter:float-left first-letter:mr-1">I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of
-			last year and found him in deep conversation with a very stout,
-			florid-faced, elderly gentleman with fiery red hair. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 221B Baker Street</button> With an apology for my intrusion, I was about to withdraw when Holmes pulled
-			me abruptly into the room and closed the door behind me.</p> <p>"You could not possibly have come at a better time, my dear Watson," he
-			said cordially. "This gentleman, Mr. Wilson, has been my partner and
-			helper in many of my most successful cases, and I have no doubt that he
-			will be of the utmost use to me in yours also."</p> <p>The stout gentleman half rose from his chair and gave a bob of greeting,
-			with a quick little questioning glance from his small fat-encircled eyes.
-			I took a good look at the man—our visitor bore every mark of being an
-			average commonplace British tradesman, obese, pompous, and slow.
-			Altogether, look as I would, there was nothing remarkable about the man
-			save his blazing red head.</p> <p>"Beyond the obvious facts that he has at some time done manual labour,
-			that he takes snuff, that he is a Freemason, that he has been in China,
-			and that he has done a considerable amount of writing lately, I can deduce
-			nothing else," said Holmes.</p> <p>Mr. Jabez Wilson started up in his chair. "How, in the name of
-			good-fortune, did you know all that, Mr. Holmes?"</p> <div class="border-l-2 border-vintage-gold pl-3 my-4 italic text-[0.7rem]">"To the Red-headed League: On account of the bequest of the late Ezekiah
-			Hopkins, of Lebanon, Pennsylvania, U.S.A., there is now another vacancy
-			open which entitles a member of the League to a salary of £4 a week for
-			purely nominal services. All red-headed men who are sound in body and mind
-			and above the age of twenty-one years, are eligible. Apply in person on
-			Monday, at eleven o'clock, to Duncan Ross, at the offices of the League, 7
-			Pope's Court, Fleet Street." <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap not-italic ml-1">📍 Pope's Court</button></div> <p>"What on earth does this mean?" I ejaculated after I had twice read over
-			the extraordinary announcement.</p> <p>"Well, it is just as I have been telling you, Mr. Sherlock Holmes," said
-			Jabez Wilson, mopping his forehead; "I have a small pawnbroker's business
-			at Coburg Square, near the City. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Jabez Wilson's House</button> It's not a very large affair, and of late years it has not done more than just
-			give me a living. I used to be able to keep two assistants, but now I only keep
-			one; and I would have a job to pay him but that he is willing to come for half
-			wages so as to learn the business."</p> <p>"What is the name of this obliging youth?" asked Sherlock Holmes.</p> <p>"His name is Vincent Spaulding, and he's not such a youth, either. I
-			should not wish a smarter assistant, Mr. Holmes. Oh, he has his faults,
-			too—never was such a fellow for photography. Snapping away with a camera
-			when he ought to be improving his mind, and then diving down into the
-			cellar like a rabbit into its hole to develop his pictures."</p> <p>"I never hope to see such a sight as that again, Mr. Holmes. From north,
-			south, east, and west every man who had a shade of red in his hair had
-			tramped into the city to answer the advertisement. Fleet Street was choked
-			with red-headed folk, and Pope's Court looked like a coster's orange
-			barrow."</p> <p>"There was nothing in the office but a couple of wooden chairs and a deal
-			table, behind which sat a small man with a head that was even redder than
-			mine. He took a step backward, cocked his head on one side, and gazed at
-			my hair until I felt quite bashful. Then suddenly he plunged forward,
-			wrung my hand, and congratulated me warmly on my success."</p> <p>"'The work is to copy out the Encyclopaedia Britannica. There is the first
-			volume of it in that press. You must find your own ink, pens, and
-			blotting-paper, but we provide this table and chair. Will you be ready
-			to-morrow?'"</p> <p>"This went on day after day, Mr. Holmes, and on Saturday the manager came
-			in and planked down four golden sovereigns for my week's work. Eight weeks
-			passed away like this, and I had written about Abbots and Archery and
-			Armour and Architecture and Attica, and hoped with diligence that I might
-			get on to the B's before very long."</p> <div class="border border-vintage-navy bg-vintage-parchment-light p-3 my-4 text-center"><p class="font-bold text-sm">THE RED-HEADED LEAGUE</p> <p class="text-[0.7rem]">IS</p> <p class="font-bold">DISSOLVED</p> <p class="text-[0.65rem] text-vintage-brown mt-1">October 9, 1890</p></div> <p>Sherlock Holmes and I surveyed this curt announcement and the rueful face
-			behind it, until the comical side of the affair so completely overtopped
-			every other consideration that we both burst out into a roar of laughter.</p> <p>"I went to the landlord, who is an accountant living on the ground-floor,
-			and I asked him if he could tell me what had become of the Red-headed
-			League. He said the gentleman's name was William Morris, a solicitor using
-			the room as a temporary convenience. He moved out yesterday to 17 King
-			Edward Street, near St. Paul's." <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 King Edward Street</button></p> <p>"I started off, Mr. Holmes, but when I got to that address it was a
-			manufactory of artificial knee-caps, and no one in it had ever heard of
-			either Mr. William Morris or Mr. Duncan Ross."</p> <p class="font-semibold text-vintage-navy-dark">"Well, Watson, what do you make of it all?"</p> <p>"I make nothing of it. It is a most mysterious business."</p> <p>"To smoke," he answered. "It is quite a three pipe problem, and I beg that
-			you won't speak to me for fifty minutes."</p> <p>"Sarasate plays at the St. James's Hall this afternoon," he remarked. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 St. James's Hall</button> "What do you think, Watson? Could your patients spare you for a few hours? Then
-			put on your hat and come. I am going through the City first, and we can have
-			some lunch on the way."</p> <p>We travelled by the Underground as far as Aldersgate <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Aldersgate Station</button> ; and a short walk took us to Saxe-Coburg Square, the scene of the singular
-			story which we had listened to in the morning. It was a poky, little, shabby-genteel
-			place, where four lines of dingy two-storied brick houses looked out into a
-			small railed-in enclosure.</p> <p>Sherlock Holmes stopped in front of it with his head on one side and
-			looked it all over, with his eyes shining brightly between puckered lids.
-			Then he walked slowly up the street, and then down again to the corner,
-			still looking keenly at the houses. Finally he returned to the
-			pawnbroker's, and, having thumped vigorously upon the pavement with his
-			stick two or three times, he went up to the door and knocked.</p> <p>"Thank you," said Holmes, "I only wished to ask you how you would go from
-			here to the Strand."</p> <p>"Third right, fourth left," answered the assistant promptly, closing the
-			door.</p> <p>"Smart fellow, that," observed Holmes as we walked away. "He is, in my
-			judgment, the fourth smartest man in London, and for daring I am not sure
-			that he has not a claim to be third."</p> <p>The road in which we found ourselves as we turned round the corner
-			presented as great a contrast to the retired Saxe-Coburg Square as the
-			front of a picture does to the back. It was one of the main arteries which
-			conveyed the traffic of the City.</p> <p>"Let me see," said Holmes, standing at the corner and glancing along the
-			line, "I should like just to remember the order of the houses here. It is
-			a hobby of mine to have an exact knowledge of London. There is Mortimer's,
-			the tobacconist, the little newspaper shop, the Coburg branch of the City
-			and Suburban Bank <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 The Bank</button> , the Vegetarian Restaurant, and McFarlane's carriage-building depot."</p> <p>My friend was an enthusiastic musician, being himself not only a very
-			capable performer but a composer of no ordinary merit. All the afternoon
-			he sat in the stalls wrapped in the most perfect happiness, gently waving
-			his long, thin fingers in time to the music.</p> <p>"You want to go home, no doubt, Doctor," he remarked as we emerged. "And I
-			have some business to do which will take some hours. This business at
-			Coburg Square is serious."</p> <p>"A considerable crime is in contemplation. I shall want your help
-			to-night. At what time?"</p> <p>"Ten will be early enough. I shall be at Baker Street at ten."</p> <p>"Very well. And, I say, Doctor, there may be some little danger, so kindly
-			put your army revolver in your pocket."</p> <p>As I drove home to my house in Kensington <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Watson's House</button> I thought over it all, from the extraordinary story of the red-headed copier
-			of the Encyclopaedia down to the visit to Saxe-Coburg Square, and the ominous
-			words with which he had parted from me.</p> <p>It was a quarter-past nine when I started from home and made my way across
-			the Park, and so through Oxford Street to Baker Street. Two hansoms were
-			standing at the door, and as I entered the passage I heard the sound of
-			voices from above.</p> <p>"Ha! Our party is complete," said Holmes, buttoning up his pea-jacket and
-			taking his heavy hunting crop from the rack. "Watson, I think you know Mr.
-			Jones, of Scotland Yard? Let me introduce you to Mr. Merryweather, who is
-			to be our companion in to-night's adventure."</p> <p>"John Clay, the murderer, thief, smasher, and forger. He's a young man,
-			Mr. Merryweather, but he is at the head of his profession, and I would
-			rather have my bracelets on him than on any criminal in London."</p> <p>We rattled through an endless labyrinth of gas-lit streets until we
-			emerged into Farringdon Street. Our cabs were dismissed, and, following
-			the guidance of Mr. Merryweather, we passed down a narrow passage and
-			through a side door. Within there was a small corridor, which ended in a
-			very massive iron gate. This led down a flight of winding stone steps,
-			which terminated at another formidable gate.</p> <p>"We are at present, Doctor—as no doubt you have divined—in the cellar of
-			the City branch of one of the principal London banks. It is our French
-			gold. We had occasion some months ago to strengthen our resources and
-			borrowed for that purpose 30,000 napoleons from the Bank of France."</p> <p>What a time it seemed! My limbs were weary and stiff, yet my nerves were
-			worked up to the highest pitch of tension. Suddenly my eyes caught the
-			glint of a light.</p> <p>At first it was but a lurid spark upon the stone pavement. Then it
-			lengthened out until it became a yellow line, and then, without any
-			warning or sound, a gash seemed to open and a hand appeared, a white,
-			almost womanly hand, which felt about in the centre of the little area of
-			light.</p> <p>With a rending, tearing sound, one of the broad, white stones turned over
-			upon its side and left a square, gaping hole. Over the edge there peeped a
-			clean-cut, boyish face, which looked keenly about it.</p> <p class="font-semibold">"It's all clear. Have you the chisel and the bags? Great Scott! Jump,
-			Archie, jump, and I'll swing for it!"</p> <p>Sherlock Holmes had sprung out and seized the intruder by the collar. The
-			light flashed upon the barrel of a revolver, but Holmes' hunting crop came
-			down on the man's wrist, and the pistol clinked upon the stone floor.</p> <p class="text-lg font-bold text-vintage-crimson text-center my-4">"It's no use, John Clay. You have no chance at all."</p> <p>"So I see," the other answered with the utmost coolness. "I fancy that my
-			pal is all right, though I see you have got his coat-tails."</p> <p>"Your red-headed idea was very new and effective," said Holmes.</p></article></div><!----></div></aside> <main class="relative min-h-0 flex flex-col"><div class="flex-1 min-h-0 relative"><div class="map-container svelte-njbu1f"><div class="map-view svelte-njbu1f"></div></div><!----> <div class="absolute top-4 left-4 z-10"><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 bg-background hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border h-10 px-6 has-[>svg]:px-4 backdrop-blur-sm border-vintage-navy/30 hover:bg-vintage-parchment rounded-sm shadow-md" type="button"><span class="text-xs font-semibold">Show 1893 Map</span><!----></button><!--]--><!----></div></div> <div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2"><!----><!--$s1--><!--[!--><div data-slot="scroll-area" class="relative w-full whitespace-nowrap py-2" id="bits-s1" dir="ltr" style="position: relative; --bits-scroll-area-corner-height: 0px; --bits-scroll-area-corner-width: 0px;" data-scroll-area-root=""><!----><!--$s2--><div data-slot="scroll-area-viewport" class="ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1" id="bits-s2" style="overflow-x: hidden; overflow-y: hidden;" data-scroll-area-viewport=""><div id="bits-1" data-scroll-area-content="" style="min-width: undefined;"><div class="flex md:justify-center md:items-center gap-2"><!--[--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s3--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s3" data-avatar-root="" data-status="loading"><!----><!----><!--$s4--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s4" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Jabez Wilson's Commute</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s5--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s5" data-avatar-root="" data-status="loading"><!----><!----><!--$s6--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s6" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s7--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s7" data-avatar-root="" data-status="loading"><!----><!----><!--$s8--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s8" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>To Saxe-Coburg Square &amp; Concert</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s9--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s9" data-avatar-root="" data-status="loading"><!----><!----><!--$s10--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s10" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Holmes goes home</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s11--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s11" data-avatar-root="" data-status="loading"><!----><!----><!--$s12--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s12" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Watson's goes home</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s13--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s13" data-avatar-root="" data-status="loading"><!----><!----><!--$s14--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s14" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Watson's Evening Journey</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s15--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s15" data-avatar-root="" data-status="loading"><!----><!----><!--$s16--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s16" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s17--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s17" data-avatar-root="" data-status="loading"><!----><!----><!--$s18--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s18" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s19--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s19" data-avatar-root="" data-status="loading"><!----><!----><!--$s20--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s20" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/merryweather.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s21--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s21" data-avatar-root="" data-status="loading"><!----><!----><!--$s22--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s22" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jones.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Catching John Clay</span><!----></button><!--]--><!--]--> <!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 font-semibold bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s23--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s23" data-avatar-root="" data-status="loading"><!----><!----><!--$s24--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s24" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s25--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s25" data-avatar-root="" data-status="loading"><!----><!----><!--$s26--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s26" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s27--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s27" data-avatar-root="" data-status="loading"><!----><!----><!--$s28--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s28" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div> <span>All</span><!----></button><!--]--><!----></div><!----><!----></div></div><!----> <!--[!--><!--]--> <!--[--><!----><!--$s29--><!--[--><!--[!--><!--]--><!--]--><!----><!--]--> <!----><!--$s30--><!--[!--><!--]--><!----><!----></div><!--]--><!----><!----></div><!----></main> <aside class="flex flex-col overflow-hidden border-l border-vintage-navy/30 bg-vintage-parchment-light"><div class="flex-1 overflow-y-auto"><div class="flex flex-col justify-center items-center h-full overflow-y-hidden p-5 font-[var(--font-playfair)] bg-vintage-parchment-light text-vintage-navy border-double border-4 border-vintage-brown/20"><div class="text-center mb-6 border-b border-vintage-navy/10 pb-4"><h1 class="font-bold text-xl leading-tight text-vintage-navy mix-blend-multiply">Regarding Sources &amp; Method</h1> <div class="mt-3"><a href="https://aman.bh/blog/2025/mapping-the-red-headed-league" class="group inline-flex flex-col items-center"><span class="text-[0.6rem] font-bold tracking-widest uppercase text-vintage-navy group-hover:text-vintage-crimson transition-colors border-b border-vintage-navy/30 group-hover:border-vintage-crimson pb-0.5">Read the full article</span> <span class="text-[0.5rem] italic text-vintage-brown/60 mt-0.5 group-hover:text-vintage-crimson/70">(External)</span></a></div> <p class="text-[0.65rem] text-balance leading-relaxed text-vintage-navy/80 font-serif px-2 my-4 italic">The full report details the work required to map this story,
-      cross-referencing railway timetables, correcting Dr. Watson's geographical
-      errors, and layering 1893 survey data over the modern street network to
-      understand where and how the characters move through London.</p></div> <section class="mb-6"><div class="flex items-center justify-center gap-2 mb-3"><dl class="space-y-3 px-2"><div class="text-center"><dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">H.M. Ordnance Survey</dt> <dd class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">London Sheet VII, 1893 Revision via National Library of Scotland</dd></div> <div class="text-center mt-2"><dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">OpenStreetMap</dt> <dd class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">via contributors</dd></div></dl></div></section> <footer class="mt-auto pt-5 border-t-2 border-double border-vintage-brown/20 text-center"><p class="text-[0.5rem] tracking-[0.2em] uppercase text-vintage-brown/70 mb-1">Compiled by</p> <p class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30">Dr. John Watson &amp;</p> <a href="https://aman.bh" class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30 underline decoration-1 underline-offset-4">Aman Bhargava</a> <div class="flex justify-center items-center gap-2 mt-3 text-[0.5rem] text-vintage-brown/60 uppercase tracking-widest"><span>Loc. Bangalore</span> <span>•</span> <span>MMXXV</span></div></footer></div><!----></div></aside></div> <div class="flex md:hidden flex-col flex-1 overflow-hidden"><!----><!----><!--$s31--><!--[!--><div data-slot="tabs" class="gap-2 flex flex-col flex-1 overflow-hidden" id="bits-s31" data-orientation="horizontal" data-tabs-root=""><!----><!----><!--$s32--><!--[!--><div data-slot="tabs-list" class="text-muted-foreground items-center justify-center w-full grid grid-cols-3 bg-vintage-navy-dark rounded-none h-auto p-0" id="bits-s32" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" data-tabs-list=""><!----><!----><!--$s33--><!--[!--><button data-slot="tabs-trigger" class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none" id="bits-s33" role="tab" data-state="inactive" data-value="story" data-orientation="horizontal" aria-selected="false" data-tabs-trigger="" tabindex="0" type="button"><!---->Story<!----></button><!--]--><!----><!----> <!----><!----><!--$s34--><!--[!--><button data-slot="tabs-trigger" class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none" id="bits-s34" role="tab" data-state="active" data-value="map" data-orientation="horizontal" aria-selected="true" data-tabs-trigger="" tabindex="0" type="button"><!---->Map<!----></button><!--]--><!----><!----> <!----><!----><!--$s35--><!--[!--><button data-slot="tabs-trigger" class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none" id="bits-s35" role="tab" data-state="inactive" data-value="info" data-orientation="horizontal" aria-selected="false" data-tabs-trigger="" tabindex="0" type="button"><!---->Info<!----></button><!--]--><!----><!----><!----></div><!--]--><!----><!----> <!----><!----><!--$s36--><!--[!--><div data-slot="tabs-content" class="outline-none flex-1 overflow-y-auto bg-vintage-parchment" id="bits-s36" role="tabpanel" hidden tabindex="0" data-value="story" data-state="inactive" data-orientation="horizontal" data-tabs-content=""><div class="bg-vintage-navy-dark text-vintage-parchment p-4 text-center"><p class="text-[0.5rem] tracking-[0.15em] opacity-70">A CARTOGRAPHIC RECORD OF</p> <h1 class="text-xl font-bold">The Red-Headed League</h1> <p class="text-lg font-bold text-vintage-gold mt-2">1890</p></div> <div class="flex flex-col h-full overflow-y-auto font-[var(--font-playfair)]"><article class="p-3 text-[0.75rem] leading-relaxed text-vintage-navy space-y-3"><p class="text-lg font-bold text-vintage-crimson text-center my-4">"It is a hobby of mine to have an exact knowledge of London."</p> <p class="text-[0.8rem] first-letter:text-2xl first-letter:font-bold first-letter:float-left first-letter:mr-1">I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of
-			last year and found him in deep conversation with a very stout,
-			florid-faced, elderly gentleman with fiery red hair. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 221B Baker Street</button> With an apology for my intrusion, I was about to withdraw when Holmes pulled
-			me abruptly into the room and closed the door behind me.</p> <p>"You could not possibly have come at a better time, my dear Watson," he
-			said cordially. "This gentleman, Mr. Wilson, has been my partner and
-			helper in many of my most successful cases, and I have no doubt that he
-			will be of the utmost use to me in yours also."</p> <p>The stout gentleman half rose from his chair and gave a bob of greeting,
-			with a quick little questioning glance from his small fat-encircled eyes.
-			I took a good look at the man—our visitor bore every mark of being an
-			average commonplace British tradesman, obese, pompous, and slow.
-			Altogether, look as I would, there was nothing remarkable about the man
-			save his blazing red head.</p> <p>"Beyond the obvious facts that he has at some time done manual labour,
-			that he takes snuff, that he is a Freemason, that he has been in China,
-			and that he has done a considerable amount of writing lately, I can deduce
-			nothing else," said Holmes.</p> <p>Mr. Jabez Wilson started up in his chair. "How, in the name of
-			good-fortune, did you know all that, Mr. Holmes?"</p> <div class="border-l-2 border-vintage-gold pl-3 my-4 italic text-[0.7rem]">"To the Red-headed League: On account of the bequest of the late Ezekiah
-			Hopkins, of Lebanon, Pennsylvania, U.S.A., there is now another vacancy
-			open which entitles a member of the League to a salary of £4 a week for
-			purely nominal services. All red-headed men who are sound in body and mind
-			and above the age of twenty-one years, are eligible. Apply in person on
-			Monday, at eleven o'clock, to Duncan Ross, at the offices of the League, 7
-			Pope's Court, Fleet Street." <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap not-italic ml-1">📍 Pope's Court</button></div> <p>"What on earth does this mean?" I ejaculated after I had twice read over
-			the extraordinary announcement.</p> <p>"Well, it is just as I have been telling you, Mr. Sherlock Holmes," said
-			Jabez Wilson, mopping his forehead; "I have a small pawnbroker's business
-			at Coburg Square, near the City. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Jabez Wilson's House</button> It's not a very large affair, and of late years it has not done more than just
-			give me a living. I used to be able to keep two assistants, but now I only keep
-			one; and I would have a job to pay him but that he is willing to come for half
-			wages so as to learn the business."</p> <p>"What is the name of this obliging youth?" asked Sherlock Holmes.</p> <p>"His name is Vincent Spaulding, and he's not such a youth, either. I
-			should not wish a smarter assistant, Mr. Holmes. Oh, he has his faults,
-			too—never was such a fellow for photography. Snapping away with a camera
-			when he ought to be improving his mind, and then diving down into the
-			cellar like a rabbit into its hole to develop his pictures."</p> <p>"I never hope to see such a sight as that again, Mr. Holmes. From north,
-			south, east, and west every man who had a shade of red in his hair had
-			tramped into the city to answer the advertisement. Fleet Street was choked
-			with red-headed folk, and Pope's Court looked like a coster's orange
-			barrow."</p> <p>"There was nothing in the office but a couple of wooden chairs and a deal
-			table, behind which sat a small man with a head that was even redder than
-			mine. He took a step backward, cocked his head on one side, and gazed at
-			my hair until I felt quite bashful. Then suddenly he plunged forward,
-			wrung my hand, and congratulated me warmly on my success."</p> <p>"'The work is to copy out the Encyclopaedia Britannica. There is the first
-			volume of it in that press. You must find your own ink, pens, and
-			blotting-paper, but we provide this table and chair. Will you be ready
-			to-morrow?'"</p> <p>"This went on day after day, Mr. Holmes, and on Saturday the manager came
-			in and planked down four golden sovereigns for my week's work. Eight weeks
-			passed away like this, and I had written about Abbots and Archery and
-			Armour and Architecture and Attica, and hoped with diligence that I might
-			get on to the B's before very long."</p> <div class="border border-vintage-navy bg-vintage-parchment-light p-3 my-4 text-center"><p class="font-bold text-sm">THE RED-HEADED LEAGUE</p> <p class="text-[0.7rem]">IS</p> <p class="font-bold">DISSOLVED</p> <p class="text-[0.65rem] text-vintage-brown mt-1">October 9, 1890</p></div> <p>Sherlock Holmes and I surveyed this curt announcement and the rueful face
-			behind it, until the comical side of the affair so completely overtopped
-			every other consideration that we both burst out into a roar of laughter.</p> <p>"I went to the landlord, who is an accountant living on the ground-floor,
-			and I asked him if he could tell me what had become of the Red-headed
-			League. He said the gentleman's name was William Morris, a solicitor using
-			the room as a temporary convenience. He moved out yesterday to 17 King
-			Edward Street, near St. Paul's." <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 King Edward Street</button></p> <p>"I started off, Mr. Holmes, but when I got to that address it was a
-			manufactory of artificial knee-caps, and no one in it had ever heard of
-			either Mr. William Morris or Mr. Duncan Ross."</p> <p class="font-semibold text-vintage-navy-dark">"Well, Watson, what do you make of it all?"</p> <p>"I make nothing of it. It is a most mysterious business."</p> <p>"To smoke," he answered. "It is quite a three pipe problem, and I beg that
-			you won't speak to me for fifty minutes."</p> <p>"Sarasate plays at the St. James's Hall this afternoon," he remarked. <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 St. James's Hall</button> "What do you think, Watson? Could your patients spare you for a few hours? Then
-			put on your hat and come. I am going through the City first, and we can have
-			some lunch on the way."</p> <p>We travelled by the Underground as far as Aldersgate <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Aldersgate Station</button> ; and a short walk took us to Saxe-Coburg Square, the scene of the singular
-			story which we had listened to in the morning. It was a poky, little, shabby-genteel
-			place, where four lines of dingy two-storied brick houses looked out into a
-			small railed-in enclosure.</p> <p>Sherlock Holmes stopped in front of it with his head on one side and
-			looked it all over, with his eyes shining brightly between puckered lids.
-			Then he walked slowly up the street, and then down again to the corner,
-			still looking keenly at the houses. Finally he returned to the
-			pawnbroker's, and, having thumped vigorously upon the pavement with his
-			stick two or three times, he went up to the door and knocked.</p> <p>"Thank you," said Holmes, "I only wished to ask you how you would go from
-			here to the Strand."</p> <p>"Third right, fourth left," answered the assistant promptly, closing the
-			door.</p> <p>"Smart fellow, that," observed Holmes as we walked away. "He is, in my
-			judgment, the fourth smartest man in London, and for daring I am not sure
-			that he has not a claim to be third."</p> <p>The road in which we found ourselves as we turned round the corner
-			presented as great a contrast to the retired Saxe-Coburg Square as the
-			front of a picture does to the back. It was one of the main arteries which
-			conveyed the traffic of the City.</p> <p>"Let me see," said Holmes, standing at the corner and glancing along the
-			line, "I should like just to remember the order of the houses here. It is
-			a hobby of mine to have an exact knowledge of London. There is Mortimer's,
-			the tobacconist, the little newspaper shop, the Coburg branch of the City
-			and Suburban Bank <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 The Bank</button> , the Vegetarian Restaurant, and McFarlane's carriage-building depot."</p> <p>My friend was an enthusiastic musician, being himself not only a very
-			capable performer but a composer of no ordinary merit. All the afternoon
-			he sat in the stalls wrapped in the most perfect happiness, gently waving
-			his long, thin fingers in time to the music.</p> <p>"You want to go home, no doubt, Doctor," he remarked as we emerged. "And I
-			have some business to do which will take some hours. This business at
-			Coburg Square is serious."</p> <p>"A considerable crime is in contemplation. I shall want your help
-			to-night. At what time?"</p> <p>"Ten will be early enough. I shall be at Baker Street at ten."</p> <p>"Very well. And, I say, Doctor, there may be some little danger, so kindly
-			put your army revolver in your pocket."</p> <p>As I drove home to my house in Kensington <button class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍 Watson's House</button> I thought over it all, from the extraordinary story of the red-headed copier
-			of the Encyclopaedia down to the visit to Saxe-Coburg Square, and the ominous
-			words with which he had parted from me.</p> <p>It was a quarter-past nine when I started from home and made my way across
-			the Park, and so through Oxford Street to Baker Street. Two hansoms were
-			standing at the door, and as I entered the passage I heard the sound of
-			voices from above.</p> <p>"Ha! Our party is complete," said Holmes, buttoning up his pea-jacket and
-			taking his heavy hunting crop from the rack. "Watson, I think you know Mr.
-			Jones, of Scotland Yard? Let me introduce you to Mr. Merryweather, who is
-			to be our companion in to-night's adventure."</p> <p>"John Clay, the murderer, thief, smasher, and forger. He's a young man,
-			Mr. Merryweather, but he is at the head of his profession, and I would
-			rather have my bracelets on him than on any criminal in London."</p> <p>We rattled through an endless labyrinth of gas-lit streets until we
-			emerged into Farringdon Street. Our cabs were dismissed, and, following
-			the guidance of Mr. Merryweather, we passed down a narrow passage and
-			through a side door. Within there was a small corridor, which ended in a
-			very massive iron gate. This led down a flight of winding stone steps,
-			which terminated at another formidable gate.</p> <p>"We are at present, Doctor—as no doubt you have divined—in the cellar of
-			the City branch of one of the principal London banks. It is our French
-			gold. We had occasion some months ago to strengthen our resources and
-			borrowed for that purpose 30,000 napoleons from the Bank of France."</p> <p>What a time it seemed! My limbs were weary and stiff, yet my nerves were
-			worked up to the highest pitch of tension. Suddenly my eyes caught the
-			glint of a light.</p> <p>At first it was but a lurid spark upon the stone pavement. Then it
-			lengthened out until it became a yellow line, and then, without any
-			warning or sound, a gash seemed to open and a hand appeared, a white,
-			almost womanly hand, which felt about in the centre of the little area of
-			light.</p> <p>With a rending, tearing sound, one of the broad, white stones turned over
-			upon its side and left a square, gaping hole. Over the edge there peeped a
-			clean-cut, boyish face, which looked keenly about it.</p> <p class="font-semibold">"It's all clear. Have you the chisel and the bags? Great Scott! Jump,
-			Archie, jump, and I'll swing for it!"</p> <p>Sherlock Holmes had sprung out and seized the intruder by the collar. The
-			light flashed upon the barrel of a revolver, but Holmes' hunting crop came
-			down on the man's wrist, and the pistol clinked upon the stone floor.</p> <p class="text-lg font-bold text-vintage-crimson text-center my-4">"It's no use, John Clay. You have no chance at all."</p> <p>"So I see," the other answered with the utmost coolness. "I fancy that my
-			pal is all right, though I see you have got his coat-tails."</p> <p>"Your red-headed idea was very new and effective," said Holmes.</p></article></div><!----><!----></div><!--]--><!----><!----> <!----><!----><!--$s37--><!--[!--><div data-slot="tabs-content" class="outline-none flex-1 flex flex-col overflow-hidden bg-vintage-parchment" id="bits-s37" role="tabpanel" tabindex="0" data-value="map" data-state="active" data-orientation="horizontal" data-tabs-content=""><div class="flex-1 min-h-0 relative"><div class="map-container svelte-njbu1f"><div class="map-view svelte-njbu1f"></div></div><!----> <div class="absolute top-4 left-4 z-10"><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5 bg-vintage-parchment/90 backdrop-blur-sm border-vintage-navy/30 text-vintage-navy hover:bg-vintage-parchment shadow-md" type="button"><span class="text-xs font-semibold">Show 1893 Map</span><!----></button><!--]--><!----></div></div> <div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2"><!----><!--$s38--><!--[!--><div data-slot="scroll-area" class="relative w-full whitespace-nowrap py-2" id="bits-s38" dir="ltr" style="position: relative; --bits-scroll-area-corner-height: 0px; --bits-scroll-area-corner-width: 0px;" data-scroll-area-root=""><!----><!--$s39--><div data-slot="scroll-area-viewport" class="ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1" id="bits-s39" style="overflow-x: hidden; overflow-y: hidden;" data-scroll-area-viewport=""><div id="bits-2" data-scroll-area-content="" style="min-width: undefined;"><div class="flex md:justify-center md:items-center gap-2"><!--[--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s40--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s40" data-avatar-root="" data-status="loading"><!----><!----><!--$s41--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s41" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Jabez Wilson's Commute</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s42--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s42" data-avatar-root="" data-status="loading"><!----><!----><!--$s43--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s43" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s44--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s44" data-avatar-root="" data-status="loading"><!----><!----><!--$s45--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s45" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>To Saxe-Coburg Square &amp; Concert</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s46--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s46" data-avatar-root="" data-status="loading"><!----><!----><!--$s47--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s47" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Holmes goes home</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s48--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s48" data-avatar-root="" data-status="loading"><!----><!----><!--$s49--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s49" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Watson's goes home</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s50--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s50" data-avatar-root="" data-status="loading"><!----><!----><!--$s51--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s51" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Watson's Evening Journey</span><!----></button><!--]--><!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><!--[--><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s52--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s52" data-avatar-root="" data-status="loading"><!----><!----><!--$s53--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s53" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s54--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s54" data-avatar-root="" data-status="loading"><!----><!----><!--$s55--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s55" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s56--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s56" data-avatar-root="" data-status="loading"><!----><!----><!--$s57--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s57" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/merryweather.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s58--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50" id="bits-s58" data-avatar-root="" data-status="loading"><!----><!----><!--$s59--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s59" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jones.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div><!--]--> <span>Catching John Clay</span><!----></button><!--]--><!--]--> <!--[!--><button data-slot="button" class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 font-semibold bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold" type="button"><div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s60--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s60" data-avatar-root="" data-status="loading"><!----><!----><!--$s61--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s61" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s62--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s62" data-avatar-root="" data-status="loading"><!----><!----><!--$s63--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s63" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----><!----><!--$s64--><!--[!--><div data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50" id="bits-s64" data-avatar-root="" data-status="loading"><!----><!----><!--$s65--><!--[!--><img data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s65" style="display: none;" data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png" onload="this.__e=event" onerror="this.__e=event"/><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]--></div> <span>All</span><!----></button><!--]--><!----></div><!----><!----></div></div><!----> <!--[!--><!--]--> <!--[--><!----><!--$s66--><!--[--><!--[!--><!--]--><!--]--><!----><!--]--> <!----><!--$s67--><!--[!--><!--]--><!----><!----></div><!--]--><!----><!----></div><!----><!----></div><!--]--><!----><!----> <!----><!----><!--$s68--><!--[!--><div data-slot="tabs-content" class="outline-none flex-1 overflow-y-auto bg-vintage-parchment" id="bits-s68" role="tabpanel" hidden tabindex="0" data-value="info" data-state="inactive" data-orientation="horizontal" data-tabs-content=""><div class="flex flex-col justify-center items-center h-full overflow-y-hidden p-5 font-[var(--font-playfair)] bg-vintage-parchment-light text-vintage-navy border-double border-4 border-vintage-brown/20"><div class="text-center mb-6 border-b border-vintage-navy/10 pb-4"><h1 class="font-bold text-xl leading-tight text-vintage-navy mix-blend-multiply">Regarding Sources &amp; Method</h1> <div class="mt-3"><a href="https://aman.bh/blog/2025/mapping-the-red-headed-league" class="group inline-flex flex-col items-center"><span class="text-[0.6rem] font-bold tracking-widest uppercase text-vintage-navy group-hover:text-vintage-crimson transition-colors border-b border-vintage-navy/30 group-hover:border-vintage-crimson pb-0.5">Read the full article</span> <span class="text-[0.5rem] italic text-vintage-brown/60 mt-0.5 group-hover:text-vintage-crimson/70">(External)</span></a></div> <p class="text-[0.65rem] text-balance leading-relaxed text-vintage-navy/80 font-serif px-2 my-4 italic">The full report details the work required to map this story,
-      cross-referencing railway timetables, correcting Dr. Watson's geographical
-      errors, and layering 1893 survey data over the modern street network to
-      understand where and how the characters move through London.</p></div> <section class="mb-6"><div class="flex items-center justify-center gap-2 mb-3"><dl class="space-y-3 px-2"><div class="text-center"><dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">H.M. Ordnance Survey</dt> <dd class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">London Sheet VII, 1893 Revision via National Library of Scotland</dd></div> <div class="text-center mt-2"><dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">OpenStreetMap</dt> <dd class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">via contributors</dd></div></dl></div></section> <footer class="mt-auto pt-5 border-t-2 border-double border-vintage-brown/20 text-center"><p class="text-[0.5rem] tracking-[0.2em] uppercase text-vintage-brown/70 mb-1">Compiled by</p> <p class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30">Dr. John Watson &amp;</p> <a href="https://aman.bh" class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30 underline decoration-1 underline-offset-4">Aman Bhargava</a> <div class="flex justify-center items-center gap-2 mt-3 text-[0.5rem] text-vintage-brown/60 uppercase tracking-widest"><span>Loc. Bangalore</span> <span>•</span> <span>MMXXV</span></div></footer></div><!----></div><!--]--><!----><!----><!----></div><!--]--><!----><!----></div> <footer class="shrink-0 md:hidden flex items-center justify-between md:flex-row flex-col gap-1 py-2 px-3 border-t border-vintage-navy/30 bg-vintage-parchment text-[0.55rem] text-vintage-brown"><span class="font-bold text-vintage-navy">MDCCCXC · <em>Mapping The Red-Headed League</em> by Dr. John Watson &amp; <a href="https://aman.bh" class="text-vintage-crimson hover:underline">Aman Bhargava</a></span> <a href="https://aman.bh/blog/2025/mapping-the-red-headed-league" class="text-vintage-crimson hover:underline">Read the full article →</a></footer></div><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_9oy4xk = {
-						base: new URL(".", location).pathname.slice(0, -1)
-					};
+	<div style="display: contents"><!--[--><!--[--><!----><!----><!---->
+		<div
+			class="flex flex-col h-screen w-screen overflow-hidden bg-vintage-parchment text-vintage-navy p-[var(--frame-border-width)]">
+			<div class="border-frame">
+				<div class="corner corner-nw"></div>
+				<div class="corner corner-ne"></div>
+				<div class="corner corner-sw"></div>
+				<div class="corner corner-se"></div>
+				<div class="edge edge-n"></div>
+				<div class="edge edge-e"></div>
+				<div class="edge edge-s"></div>
+				<div class="edge edge-w"></div>
+			</div>
+			<div class="hidden md:grid grid-cols-[280px_1fr_220px] flex-1 min-h-0 gap-0">
+				<aside class="flex flex-col overflow-hidden border-r border-vintage-navy/30 bg-vintage-parchment">
+					<div class="shrink-0 bg-vintage-navy-dark text-vintage-parchment p-4">
+						<p class="text-[0.55rem] tracking-[0.15em] opacity-70 mb-1">A CARTOGRAPHIC RECORD OF</p>
+						<h1 class="text-lg font-bold leading-tight mb-1">The Red-Headed League</h1>
+						<div class="pt-2 border-t border-vintage-parchment/20">
+							<p class="text-[0.5rem] tracking-[0.1em] opacity-70">ANNO DOMINI</p>
+							<p class="text-2xl font-bold text-vintage-gold">1890</p>
+						</div>
+					</div>
+					<div class="flex-1 overflow-y-auto">
+						<div class="flex flex-col h-full overflow-y-auto font-[var(--font-playfair)]">
+							<article class="p-3 text-[0.75rem] leading-relaxed text-vintage-navy space-y-3">
+								<p class="text-lg font-bold text-vintage-crimson text-center my-4">"It is a hobby of mine to have an
+									exact knowledge of London."</p>
+								<p
+									class="text-[0.8rem] first-letter:text-2xl first-letter:font-bold first-letter:float-left first-letter:mr-1">
+									I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of
+									last year and found him in deep conversation with a very stout,
+									florid-faced, elderly gentleman with fiery red hair. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										221B Baker Street</button> With an apology for my intrusion, I was about to withdraw when Holmes
+									pulled
+									me abruptly into the room and closed the door behind me.</p>
+								<p>"You could not possibly have come at a better time, my dear Watson," he
+									said cordially. "This gentleman, Mr. Wilson, has been my partner and
+									helper in many of my most successful cases, and I have no doubt that he
+									will be of the utmost use to me in yours also."</p>
+								<p>The stout gentleman half rose from his chair and gave a bob of greeting,
+									with a quick little questioning glance from his small fat-encircled eyes.
+									I took a good look at the man—our visitor bore every mark of being an
+									average commonplace British tradesman, obese, pompous, and slow.
+									Altogether, look as I would, there was nothing remarkable about the man
+									save his blazing red head.</p>
+								<p>"Beyond the obvious facts that he has at some time done manual labour,
+									that he takes snuff, that he is a Freemason, that he has been in China,
+									and that he has done a considerable amount of writing lately, I can deduce
+									nothing else," said Holmes.</p>
+								<p>Mr. Jabez Wilson started up in his chair. "How, in the name of
+									good-fortune, did you know all that, Mr. Holmes?"</p>
+								<div class="border-l-2 border-vintage-gold pl-3 my-4 italic text-[0.7rem]">"To the Red-headed League: On
+									account of the bequest of the late Ezekiah
+									Hopkins, of Lebanon, Pennsylvania, U.S.A., there is now another vacancy
+									open which entitles a member of the League to a salary of £4 a week for
+									purely nominal services. All red-headed men who are sound in body and mind
+									and above the age of twenty-one years, are eligible. Apply in person on
+									Monday, at eleven o'clock, to Duncan Ross, at the offices of the League, 7
+									Pope's Court, Fleet Street." <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap not-italic ml-1">📍
+										Pope's Court</button></div>
+								<p>"What on earth does this mean?" I ejaculated after I had twice read over
+									the extraordinary announcement.</p>
+								<p>"Well, it is just as I have been telling you, Mr. Sherlock Holmes," said
+									Jabez Wilson, mopping his forehead; "I have a small pawnbroker's business
+									at Coburg Square, near the City. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Jabez Wilson's House</button> It's not a very large affair, and of late years it has not done more
+									than just
+									give me a living. I used to be able to keep two assistants, but now I only keep
+									one; and I would have a job to pay him but that he is willing to come for half
+									wages so as to learn the business."</p>
+								<p>"What is the name of this obliging youth?" asked Sherlock Holmes.</p>
+								<p>"His name is Vincent Spaulding, and he's not such a youth, either. I
+									should not wish a smarter assistant, Mr. Holmes. Oh, he has his faults,
+									too—never was such a fellow for photography. Snapping away with a camera
+									when he ought to be improving his mind, and then diving down into the
+									cellar like a rabbit into its hole to develop his pictures."</p>
+								<p>"I never hope to see such a sight as that again, Mr. Holmes. From north,
+									south, east, and west every man who had a shade of red in his hair had
+									tramped into the city to answer the advertisement. Fleet Street was choked
+									with red-headed folk, and Pope's Court looked like a coster's orange
+									barrow."</p>
+								<p>"There was nothing in the office but a couple of wooden chairs and a deal
+									table, behind which sat a small man with a head that was even redder than
+									mine. He took a step backward, cocked his head on one side, and gazed at
+									my hair until I felt quite bashful. Then suddenly he plunged forward,
+									wrung my hand, and congratulated me warmly on my success."</p>
+								<p>"'The work is to copy out the Encyclopaedia Britannica. There is the first
+									volume of it in that press. You must find your own ink, pens, and
+									blotting-paper, but we provide this table and chair. Will you be ready
+									to-morrow?'"</p>
+								<p>"This went on day after day, Mr. Holmes, and on Saturday the manager came
+									in and planked down four golden sovereigns for my week's work. Eight weeks
+									passed away like this, and I had written about Abbots and Archery and
+									Armour and Architecture and Attica, and hoped with diligence that I might
+									get on to the B's before very long."</p>
+								<div class="border border-vintage-navy bg-vintage-parchment-light p-3 my-4 text-center">
+									<p class="font-bold text-sm">THE RED-HEADED LEAGUE</p>
+									<p class="text-[0.7rem]">IS</p>
+									<p class="font-bold">DISSOLVED</p>
+									<p class="text-[0.65rem] text-vintage-brown mt-1">October 9, 1890</p>
+								</div>
+								<p>Sherlock Holmes and I surveyed this curt announcement and the rueful face
+									behind it, until the comical side of the affair so completely overtopped
+									every other consideration that we both burst out into a roar of laughter.</p>
+								<p>"I went to the landlord, who is an accountant living on the ground-floor,
+									and I asked him if he could tell me what had become of the Red-headed
+									League. He said the gentleman's name was William Morris, a solicitor using
+									the room as a temporary convenience. He moved out yesterday to 17 King
+									Edward Street, near St. Paul's." <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										King Edward Street</button></p>
+								<p>"I started off, Mr. Holmes, but when I got to that address it was a
+									manufactory of artificial knee-caps, and no one in it had ever heard of
+									either Mr. William Morris or Mr. Duncan Ross."</p>
+								<p class="font-semibold text-vintage-navy-dark">"Well, Watson, what do you make of it all?"</p>
+								<p>"I make nothing of it. It is a most mysterious business."</p>
+								<p>"To smoke," he answered. "It is quite a three pipe problem, and I beg that
+									you won't speak to me for fifty minutes."</p>
+								<p>"Sarasate plays at the St. James's Hall this afternoon," he remarked. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										St. James's Hall</button> "What do you think, Watson? Could your patients spare you for a few hours?
+									Then
+									put on your hat and come. I am going through the City first, and we can have
+									some lunch on the way."</p>
+								<p>We travelled by the Underground as far as Aldersgate <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Aldersgate Station</button> ; and a short walk took us to Saxe-Coburg Square, the scene of the
+									singular
+									story which we had listened to in the morning. It was a poky, little, shabby-genteel
+									place, where four lines of dingy two-storied brick houses looked out into a
+									small railed-in enclosure.</p>
+								<p>Sherlock Holmes stopped in front of it with his head on one side and
+									looked it all over, with his eyes shining brightly between puckered lids.
+									Then he walked slowly up the street, and then down again to the corner,
+									still looking keenly at the houses. Finally he returned to the
+									pawnbroker's, and, having thumped vigorously upon the pavement with his
+									stick two or three times, he went up to the door and knocked.</p>
+								<p>"Thank you," said Holmes, "I only wished to ask you how you would go from
+									here to the Strand."</p>
+								<p>"Third right, fourth left," answered the assistant promptly, closing the
+									door.</p>
+								<p>"Smart fellow, that," observed Holmes as we walked away. "He is, in my
+									judgment, the fourth smartest man in London, and for daring I am not sure
+									that he has not a claim to be third."</p>
+								<p>The road in which we found ourselves as we turned round the corner
+									presented as great a contrast to the retired Saxe-Coburg Square as the
+									front of a picture does to the back. It was one of the main arteries which
+									conveyed the traffic of the City.</p>
+								<p>"Let me see," said Holmes, standing at the corner and glancing along the
+									line, "I should like just to remember the order of the houses here. It is
+									a hobby of mine to have an exact knowledge of London. There is Mortimer's,
+									the tobacconist, the little newspaper shop, the Coburg branch of the City
+									and Suburban Bank <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										The Bank</button> , the Vegetarian Restaurant, and McFarlane's carriage-building depot."</p>
+								<p>My friend was an enthusiastic musician, being himself not only a very
+									capable performer but a composer of no ordinary merit. All the afternoon
+									he sat in the stalls wrapped in the most perfect happiness, gently waving
+									his long, thin fingers in time to the music.</p>
+								<p>"You want to go home, no doubt, Doctor," he remarked as we emerged. "And I
+									have some business to do which will take some hours. This business at
+									Coburg Square is serious."</p>
+								<p>"A considerable crime is in contemplation. I shall want your help
+									to-night. At what time?"</p>
+								<p>"Ten will be early enough. I shall be at Baker Street at ten."</p>
+								<p>"Very well. And, I say, Doctor, there may be some little danger, so kindly
+									put your army revolver in your pocket."</p>
+								<p>As I drove home to my house in Kensington <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Watson's House</button> I thought over it all, from the extraordinary story of the red-headed copier
+									of the Encyclopaedia down to the visit to Saxe-Coburg Square, and the ominous
+									words with which he had parted from me.</p>
+								<p>It was a quarter-past nine when I started from home and made my way across
+									the Park, and so through Oxford Street to Baker Street. Two hansoms were
+									standing at the door, and as I entered the passage I heard the sound of
+									voices from above.</p>
+								<p>"Ha! Our party is complete," said Holmes, buttoning up his pea-jacket and
+									taking his heavy hunting crop from the rack. "Watson, I think you know Mr.
+									Jones, of Scotland Yard? Let me introduce you to Mr. Merryweather, who is
+									to be our companion in to-night's adventure."</p>
+								<p>"John Clay, the murderer, thief, smasher, and forger. He's a young man,
+									Mr. Merryweather, but he is at the head of his profession, and I would
+									rather have my bracelets on him than on any criminal in London."</p>
+								<p>We rattled through an endless labyrinth of gas-lit streets until we
+									emerged into Farringdon Street. Our cabs were dismissed, and, following
+									the guidance of Mr. Merryweather, we passed down a narrow passage and
+									through a side door. Within there was a small corridor, which ended in a
+									very massive iron gate. This led down a flight of winding stone steps,
+									which terminated at another formidable gate.</p>
+								<p>"We are at present, Doctor—as no doubt you have divined—in the cellar of
+									the City branch of one of the principal London banks. It is our French
+									gold. We had occasion some months ago to strengthen our resources and
+									borrowed for that purpose 30,000 napoleons from the Bank of France."</p>
+								<p>What a time it seemed! My limbs were weary and stiff, yet my nerves were
+									worked up to the highest pitch of tension. Suddenly my eyes caught the
+									glint of a light.</p>
+								<p>At first it was but a lurid spark upon the stone pavement. Then it
+									lengthened out until it became a yellow line, and then, without any
+									warning or sound, a gash seemed to open and a hand appeared, a white,
+									almost womanly hand, which felt about in the centre of the little area of
+									light.</p>
+								<p>With a rending, tearing sound, one of the broad, white stones turned over
+									upon its side and left a square, gaping hole. Over the edge there peeped a
+									clean-cut, boyish face, which looked keenly about it.</p>
+								<p class="font-semibold">"It's all clear. Have you the chisel and the bags? Great Scott! Jump,
+									Archie, jump, and I'll swing for it!"</p>
+								<p>Sherlock Holmes had sprung out and seized the intruder by the collar. The
+									light flashed upon the barrel of a revolver, but Holmes' hunting crop came
+									down on the man's wrist, and the pistol clinked upon the stone floor.</p>
+								<p class="text-lg font-bold text-vintage-crimson text-center my-4">"It's no use, John Clay. You have no
+									chance at all."</p>
+								<p>"So I see," the other answered with the utmost coolness. "I fancy that my
+									pal is all right, though I see you have got his coat-tails."</p>
+								<p>"Your red-headed idea was very new and effective," said Holmes.</p>
+							</article>
+						</div><!---->
+					</div>
+				</aside>
+				<main class="relative min-h-0 flex flex-col">
+					<div class="flex-1 min-h-0 relative">
+						<div class="map-container svelte-njbu1f">
+							<div class="map-view svelte-njbu1f"></div>
+						</div><!---->
+						<div class="absolute top-4 left-4 z-10"><!--[!--><button data-slot="button"
+								class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 bg-background hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border h-10 px-6 has-[>svg]:px-4 backdrop-blur-sm border-vintage-navy/30 hover:bg-vintage-parchment rounded-sm shadow-md"
+								type="button"><span class="text-xs font-semibold">Show 1893 Map</span><!----></button><!--]--><!---->
+						</div>
+					</div>
+					<div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2"><!----><!--$s1--><!--[!-->
+						<div data-slot="scroll-area" class="relative w-full whitespace-nowrap py-2" id="bits-s1" dir="ltr"
+							style="position: relative; --bits-scroll-area-corner-height: 0px; --bits-scroll-area-corner-width: 0px;"
+							data-scroll-area-root=""><!----><!--$s2-->
+							<div data-slot="scroll-area-viewport"
+								class="ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1"
+								id="bits-s2" style="overflow-x: hidden; overflow-y: hidden;" data-scroll-area-viewport="">
+								<div id="bits-1" data-scroll-area-content="" style="min-width: undefined;">
+									<div class="flex md:justify-center md:items-center gap-2"><!--[--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s3--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s3" data-avatar-root="" data-status="loading"><!----><!----><!--$s4--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s4"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/jabez.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>Jabez Wilson's Commute</span><!---->
+										</button><!--]--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s5--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s5" data-avatar-root="" data-status="loading"><!----><!----><!--$s6--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s6"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/holmes.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s7--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s7" data-avatar-root="" data-status="loading"><!----><!----><!--$s8--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s8"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/watson.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>To Saxe-Coburg Square &amp; Concert</span><!---->
+										</button><!--]--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s9--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s9" data-avatar-root="" data-status="loading"><!----><!----><!--$s10--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s10"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/holmes.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>Holmes goes home</span><!---->
+										</button><!--]--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s11--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s11" data-avatar-root="" data-status="loading"><!----><!----><!--$s12--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s12"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/watson.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>Watson's goes home</span><!---->
+										</button><!--]--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s13--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s13" data-avatar-root="" data-status="loading"><!----><!----><!--$s14--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s14"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/watson.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>Watson's Evening Journey</span><!---->
+										</button><!--]--><!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button"><!--[-->
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s15--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s15" data-avatar-root="" data-status="loading"><!----><!----><!--$s16--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s16"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/holmes.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s17--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s17" data-avatar-root="" data-status="loading"><!----><!----><!--$s18--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s18"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/watson.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s19--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s19" data-avatar-root="" data-status="loading"><!----><!----><!--$s20--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s20"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/merryweather.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s21--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+													id="bits-s21" data-avatar-root="" data-status="loading"><!----><!----><!--$s22--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s22"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/jones.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div><!--]--> <span>Catching John Clay</span><!---->
+										</button><!--]--><!--]--> <!--[!--><button data-slot="button"
+											class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 font-semibold bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+											type="button">
+											<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s23--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+													id="bits-s23" data-avatar-root="" data-status="loading"><!----><!----><!--$s24--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s24"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/holmes.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s25--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+													id="bits-s25" data-avatar-root="" data-status="loading"><!----><!----><!--$s26--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s26"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/watson.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div>
+												<!--]--><!----><!----><!----><!----><!--$s27--><!--[!-->
+												<div data-slot="avatar"
+													class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+													id="bits-s27" data-avatar-root="" data-status="loading"><!----><!----><!--$s28--><!--[!--><img
+														data-slot="avatar-image" class="aspect-square size-full" alt="" id="bits-s28"
+														style="display: none;" data-status="loading" data-avatar-image=""
+														src="/map/sprite/icons/jabez.png" onload="this.__e=event"
+														onerror="this.__e=event" /><!--]--><!----><!----><!----></div><!--]--><!----><!----><!--]-->
+											</div> <span>All</span><!---->
+										</button><!--]--><!----></div><!----><!---->
+								</div>
+							</div><!----> <!--[!--><!--]--> <!--[--><!----><!--$s29--><!--[--><!--[!--><!--]--><!--]--><!----><!--]-->
+							<!----><!--$s30--><!--[!--><!--]--><!----><!---->
+						</div><!--]--><!----><!---->
+					</div><!---->
+				</main>
+				<aside class="flex flex-col overflow-hidden border-l border-vintage-navy/30 bg-vintage-parchment-light">
+					<div class="flex-1 overflow-y-auto">
+						<div
+							class="flex flex-col justify-center items-center h-full overflow-y-hidden p-5 font-[var(--font-playfair)] bg-vintage-parchment-light text-vintage-navy border-double border-4 border-vintage-brown/20">
+							<div class="text-center mb-6 border-b border-vintage-navy/10 pb-4">
+								<h1 class="font-bold text-xl leading-tight text-vintage-navy mix-blend-multiply">Regarding Sources &amp;
+									Method</h1>
+								<div class="mt-3"><a href="https://aman.bh/blog/2026/mapping-the-red-headed-league"
+										class="group inline-flex flex-col items-center"><span
+											class="text-[0.6rem] font-bold tracking-widest uppercase text-vintage-navy group-hover:text-vintage-crimson transition-colors border-b border-vintage-navy/30 group-hover:border-vintage-crimson pb-0.5">Read
+											the full article</span> <span
+											class="text-[0.5rem] italic text-vintage-brown/60 mt-0.5 group-hover:text-vintage-crimson/70">(External)</span></a>
+								</div>
+								<p class="text-[0.65rem] text-balance leading-relaxed text-vintage-navy/80 font-serif px-2 my-4 italic">
+									The full report details the work required to map this story,
+									cross-referencing railway timetables, correcting Dr. Watson's geographical
+									errors, and layering 1893 survey data over the modern street network to
+									understand where and how the characters move through London.</p>
+							</div>
+							<section class="mb-6">
+								<div class="flex items-center justify-center gap-2 mb-3">
+									<dl class="space-y-3 px-2">
+										<div class="text-center">
+											<dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">H.M. Ordnance Survey
+											</dt>
+											<dd
+												class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">
+												London Sheet VII, 1893 Revision via National Library of Scotland</dd>
+										</div>
+										<div class="text-center mt-2">
+											<dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">OpenStreetMap</dt>
+											<dd
+												class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">
+												via contributors</dd>
+										</div>
+									</dl>
+								</div>
+							</section>
+							<footer class="mt-auto pt-5 border-t-2 border-double border-vintage-brown/20 text-center">
+								<p class="text-[0.5rem] tracking-[0.2em] uppercase text-vintage-brown/70 mb-1">Compiled by</p>
+								<p
+									class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30">
+									Dr. John Watson &amp;</p> <a href="https://aman.bh"
+									class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30 underline decoration-1 underline-offset-4">Aman
+									Bhargava</a>
+								<div
+									class="flex justify-center items-center gap-2 mt-3 text-[0.5rem] text-vintage-brown/60 uppercase tracking-widest">
+									<span>Loc. Bangalore</span> <span>•</span> <span>MMXXV</span>
+								</div>
+							</footer>
+						</div><!---->
+					</div>
+				</aside>
+			</div>
+			<div class="flex md:hidden flex-col flex-1 overflow-hidden"><!----><!----><!--$s31--><!--[!-->
+				<div data-slot="tabs" class="gap-2 flex flex-col flex-1 overflow-hidden" id="bits-s31"
+					data-orientation="horizontal" data-tabs-root=""><!----><!----><!--$s32--><!--[!-->
+					<div data-slot="tabs-list"
+						class="text-muted-foreground items-center justify-center w-full grid grid-cols-3 bg-vintage-navy-dark rounded-none h-auto p-0"
+						id="bits-s32" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" data-tabs-list="">
+						<!----><!----><!--$s33--><!--[!--><button data-slot="tabs-trigger"
+							class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none"
+							id="bits-s33" role="tab" data-state="inactive" data-value="story" data-orientation="horizontal"
+							aria-selected="false" data-tabs-trigger="" tabindex="0"
+							type="button"><!---->Story<!----></button><!--]--><!----><!----> <!----><!----><!--$s34--><!--[!--><button
+							data-slot="tabs-trigger"
+							class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none"
+							id="bits-s34" role="tab" data-state="active" data-value="map" data-orientation="horizontal"
+							aria-selected="true" data-tabs-trigger="" tabindex="0"
+							type="button"><!---->Map<!----></button><!--]--><!----><!----> <!----><!----><!--$s35--><!--[!--><button
+							data-slot="tabs-trigger"
+							class="dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 py-3 px-4 text-sm font-semibold text-vintage-parchment/70 bg-transparent border-b-2 border-transparent rounded-none data-[state=active]:text-vintage-navy data-[state=active]:bg-vintage-parchment data-[state=active]:border-x-vintage-navy data-[state=active]:shadow-none"
+							id="bits-s35" role="tab" data-state="inactive" data-value="info" data-orientation="horizontal"
+							aria-selected="false" data-tabs-trigger="" tabindex="0"
+							type="button"><!---->Info<!----></button><!--]--><!----><!----><!---->
+					</div><!--]--><!----><!---->
+					<!----><!----><!--$s36--><!--[!-->
+					<div data-slot="tabs-content" class="outline-none flex-1 overflow-y-auto bg-vintage-parchment" id="bits-s36"
+						role="tabpanel" hidden tabindex="0" data-value="story" data-state="inactive" data-orientation="horizontal"
+						data-tabs-content="">
+						<div class="bg-vintage-navy-dark text-vintage-parchment p-4 text-center">
+							<p class="text-[0.5rem] tracking-[0.15em] opacity-70">A CARTOGRAPHIC RECORD OF</p>
+							<h1 class="text-xl font-bold">The Red-Headed League</h1>
+							<p class="text-lg font-bold text-vintage-gold mt-2">1890</p>
+						</div>
+						<div class="flex flex-col h-full overflow-y-auto font-[var(--font-playfair)]">
+							<article class="p-3 text-[0.75rem] leading-relaxed text-vintage-navy space-y-3">
+								<p class="text-lg font-bold text-vintage-crimson text-center my-4">"It is a hobby of mine to have an
+									exact knowledge of London."</p>
+								<p
+									class="text-[0.8rem] first-letter:text-2xl first-letter:font-bold first-letter:float-left first-letter:mr-1">
+									I had called upon my friend, Mr. Sherlock Holmes, one day in the autumn of
+									last year and found him in deep conversation with a very stout,
+									florid-faced, elderly gentleman with fiery red hair. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										221B Baker Street</button> With an apology for my intrusion, I was about to withdraw when Holmes
+									pulled
+									me abruptly into the room and closed the door behind me.</p>
+								<p>"You could not possibly have come at a better time, my dear Watson," he
+									said cordially. "This gentleman, Mr. Wilson, has been my partner and
+									helper in many of my most successful cases, and I have no doubt that he
+									will be of the utmost use to me in yours also."</p>
+								<p>The stout gentleman half rose from his chair and gave a bob of greeting,
+									with a quick little questioning glance from his small fat-encircled eyes.
+									I took a good look at the man—our visitor bore every mark of being an
+									average commonplace British tradesman, obese, pompous, and slow.
+									Altogether, look as I would, there was nothing remarkable about the man
+									save his blazing red head.</p>
+								<p>"Beyond the obvious facts that he has at some time done manual labour,
+									that he takes snuff, that he is a Freemason, that he has been in China,
+									and that he has done a considerable amount of writing lately, I can deduce
+									nothing else," said Holmes.</p>
+								<p>Mr. Jabez Wilson started up in his chair. "How, in the name of
+									good-fortune, did you know all that, Mr. Holmes?"</p>
+								<div class="border-l-2 border-vintage-gold pl-3 my-4 italic text-[0.7rem]">"To the Red-headed League: On
+									account of the bequest of the late Ezekiah
+									Hopkins, of Lebanon, Pennsylvania, U.S.A., there is now another vacancy
+									open which entitles a member of the League to a salary of £4 a week for
+									purely nominal services. All red-headed men who are sound in body and mind
+									and above the age of twenty-one years, are eligible. Apply in person on
+									Monday, at eleven o'clock, to Duncan Ross, at the offices of the League, 7
+									Pope's Court, Fleet Street." <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap not-italic ml-1">📍
+										Pope's Court</button></div>
+								<p>"What on earth does this mean?" I ejaculated after I had twice read over
+									the extraordinary announcement.</p>
+								<p>"Well, it is just as I have been telling you, Mr. Sherlock Holmes," said
+									Jabez Wilson, mopping his forehead; "I have a small pawnbroker's business
+									at Coburg Square, near the City. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Jabez Wilson's House</button> It's not a very large affair, and of late years it has not done more
+									than just
+									give me a living. I used to be able to keep two assistants, but now I only keep
+									one; and I would have a job to pay him but that he is willing to come for half
+									wages so as to learn the business."</p>
+								<p>"What is the name of this obliging youth?" asked Sherlock Holmes.</p>
+								<p>"His name is Vincent Spaulding, and he's not such a youth, either. I
+									should not wish a smarter assistant, Mr. Holmes. Oh, he has his faults,
+									too—never was such a fellow for photography. Snapping away with a camera
+									when he ought to be improving his mind, and then diving down into the
+									cellar like a rabbit into its hole to develop his pictures."</p>
+								<p>"I never hope to see such a sight as that again, Mr. Holmes. From north,
+									south, east, and west every man who had a shade of red in his hair had
+									tramped into the city to answer the advertisement. Fleet Street was choked
+									with red-headed folk, and Pope's Court looked like a coster's orange
+									barrow."</p>
+								<p>"There was nothing in the office but a couple of wooden chairs and a deal
+									table, behind which sat a small man with a head that was even redder than
+									mine. He took a step backward, cocked his head on one side, and gazed at
+									my hair until I felt quite bashful. Then suddenly he plunged forward,
+									wrung my hand, and congratulated me warmly on my success."</p>
+								<p>"'The work is to copy out the Encyclopaedia Britannica. There is the first
+									volume of it in that press. You must find your own ink, pens, and
+									blotting-paper, but we provide this table and chair. Will you be ready
+									to-morrow?'"</p>
+								<p>"This went on day after day, Mr. Holmes, and on Saturday the manager came
+									in and planked down four golden sovereigns for my week's work. Eight weeks
+									passed away like this, and I had written about Abbots and Archery and
+									Armour and Architecture and Attica, and hoped with diligence that I might
+									get on to the B's before very long."</p>
+								<div class="border border-vintage-navy bg-vintage-parchment-light p-3 my-4 text-center">
+									<p class="font-bold text-sm">THE RED-HEADED LEAGUE</p>
+									<p class="text-[0.7rem]">IS</p>
+									<p class="font-bold">DISSOLVED</p>
+									<p class="text-[0.65rem] text-vintage-brown mt-1">October 9, 1890</p>
+								</div>
+								<p>Sherlock Holmes and I surveyed this curt announcement and the rueful face
+									behind it, until the comical side of the affair so completely overtopped
+									every other consideration that we both burst out into a roar of laughter.</p>
+								<p>"I went to the landlord, who is an accountant living on the ground-floor,
+									and I asked him if he could tell me what had become of the Red-headed
+									League. He said the gentleman's name was William Morris, a solicitor using
+									the room as a temporary convenience. He moved out yesterday to 17 King
+									Edward Street, near St. Paul's." <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										King Edward Street</button></p>
+								<p>"I started off, Mr. Holmes, but when I got to that address it was a
+									manufactory of artificial knee-caps, and no one in it had ever heard of
+									either Mr. William Morris or Mr. Duncan Ross."</p>
+								<p class="font-semibold text-vintage-navy-dark">"Well, Watson, what do you make of it all?"</p>
+								<p>"I make nothing of it. It is a most mysterious business."</p>
+								<p>"To smoke," he answered. "It is quite a three pipe problem, and I beg that
+									you won't speak to me for fifty minutes."</p>
+								<p>"Sarasate plays at the St. James's Hall this afternoon," he remarked. <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										St. James's Hall</button> "What do you think, Watson? Could your patients spare you for a few hours?
+									Then
+									put on your hat and come. I am going through the City first, and we can have
+									some lunch on the way."</p>
+								<p>We travelled by the Underground as far as Aldersgate <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Aldersgate Station</button> ; and a short walk took us to Saxe-Coburg Square, the scene of the
+									singular
+									story which we had listened to in the morning. It was a poky, little, shabby-genteel
+									place, where four lines of dingy two-storied brick houses looked out into a
+									small railed-in enclosure.</p>
+								<p>Sherlock Holmes stopped in front of it with his head on one side and
+									looked it all over, with his eyes shining brightly between puckered lids.
+									Then he walked slowly up the street, and then down again to the corner,
+									still looking keenly at the houses. Finally he returned to the
+									pawnbroker's, and, having thumped vigorously upon the pavement with his
+									stick two or three times, he went up to the door and knocked.</p>
+								<p>"Thank you," said Holmes, "I only wished to ask you how you would go from
+									here to the Strand."</p>
+								<p>"Third right, fourth left," answered the assistant promptly, closing the
+									door.</p>
+								<p>"Smart fellow, that," observed Holmes as we walked away. "He is, in my
+									judgment, the fourth smartest man in London, and for daring I am not sure
+									that he has not a claim to be third."</p>
+								<p>The road in which we found ourselves as we turned round the corner
+									presented as great a contrast to the retired Saxe-Coburg Square as the
+									front of a picture does to the back. It was one of the main arteries which
+									conveyed the traffic of the City.</p>
+								<p>"Let me see," said Holmes, standing at the corner and glancing along the
+									line, "I should like just to remember the order of the houses here. It is
+									a hobby of mine to have an exact knowledge of London. There is Mortimer's,
+									the tobacconist, the little newspaper shop, the Coburg branch of the City
+									and Suburban Bank <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										The Bank</button> , the Vegetarian Restaurant, and McFarlane's carriage-building depot."</p>
+								<p>My friend was an enthusiastic musician, being himself not only a very
+									capable performer but a composer of no ordinary merit. All the afternoon
+									he sat in the stalls wrapped in the most perfect happiness, gently waving
+									his long, thin fingers in time to the music.</p>
+								<p>"You want to go home, no doubt, Doctor," he remarked as we emerged. "And I
+									have some business to do which will take some hours. This business at
+									Coburg Square is serious."</p>
+								<p>"A considerable crime is in contemplation. I shall want your help
+									to-night. At what time?"</p>
+								<p>"Ten will be early enough. I shall be at Baker Street at ten."</p>
+								<p>"Very well. And, I say, Doctor, there may be some little danger, so kindly
+									put your army revolver in your pocket."</p>
+								<p>As I drove home to my house in Kensington <button
+										class="inline bg-vintage-parchment-light border border-vintage-brown rounded px-1.5 py-0.5 text-[0.65rem] text-vintage-crimson hover:bg-vintage-crimson hover:text-vintage-parchment hover:border-vintage-crimson transition-colors whitespace-nowrap">📍
+										Watson's House</button> I thought over it all, from the extraordinary story of the red-headed copier
+									of the Encyclopaedia down to the visit to Saxe-Coburg Square, and the ominous
+									words with which he had parted from me.</p>
+								<p>It was a quarter-past nine when I started from home and made my way across
+									the Park, and so through Oxford Street to Baker Street. Two hansoms were
+									standing at the door, and as I entered the passage I heard the sound of
+									voices from above.</p>
+								<p>"Ha! Our party is complete," said Holmes, buttoning up his pea-jacket and
+									taking his heavy hunting crop from the rack. "Watson, I think you know Mr.
+									Jones, of Scotland Yard? Let me introduce you to Mr. Merryweather, who is
+									to be our companion in to-night's adventure."</p>
+								<p>"John Clay, the murderer, thief, smasher, and forger. He's a young man,
+									Mr. Merryweather, but he is at the head of his profession, and I would
+									rather have my bracelets on him than on any criminal in London."</p>
+								<p>We rattled through an endless labyrinth of gas-lit streets until we
+									emerged into Farringdon Street. Our cabs were dismissed, and, following
+									the guidance of Mr. Merryweather, we passed down a narrow passage and
+									through a side door. Within there was a small corridor, which ended in a
+									very massive iron gate. This led down a flight of winding stone steps,
+									which terminated at another formidable gate.</p>
+								<p>"We are at present, Doctor—as no doubt you have divined—in the cellar of
+									the City branch of one of the principal London banks. It is our French
+									gold. We had occasion some months ago to strengthen our resources and
+									borrowed for that purpose 30,000 napoleons from the Bank of France."</p>
+								<p>What a time it seemed! My limbs were weary and stiff, yet my nerves were
+									worked up to the highest pitch of tension. Suddenly my eyes caught the
+									glint of a light.</p>
+								<p>At first it was but a lurid spark upon the stone pavement. Then it
+									lengthened out until it became a yellow line, and then, without any
+									warning or sound, a gash seemed to open and a hand appeared, a white,
+									almost womanly hand, which felt about in the centre of the little area of
+									light.</p>
+								<p>With a rending, tearing sound, one of the broad, white stones turned over
+									upon its side and left a square, gaping hole. Over the edge there peeped a
+									clean-cut, boyish face, which looked keenly about it.</p>
+								<p class="font-semibold">"It's all clear. Have you the chisel and the bags? Great Scott! Jump,
+									Archie, jump, and I'll swing for it!"</p>
+								<p>Sherlock Holmes had sprung out and seized the intruder by the collar. The
+									light flashed upon the barrel of a revolver, but Holmes' hunting crop came
+									down on the man's wrist, and the pistol clinked upon the stone floor.</p>
+								<p class="text-lg font-bold text-vintage-crimson text-center my-4">"It's no use, John Clay. You have no
+									chance at all."</p>
+								<p>"So I see," the other answered with the utmost coolness. "I fancy that my
+									pal is all right, though I see you have got his coat-tails."</p>
+								<p>"Your red-headed idea was very new and effective," said Holmes.</p>
+							</article>
+						</div><!----><!---->
+					</div><!--]--><!----><!----> <!----><!----><!--$s37--><!--[!-->
+					<div data-slot="tabs-content" class="outline-none flex-1 flex flex-col overflow-hidden bg-vintage-parchment"
+						id="bits-s37" role="tabpanel" tabindex="0" data-value="map" data-state="active"
+						data-orientation="horizontal" data-tabs-content="">
+						<div class="flex-1 min-h-0 relative">
+							<div class="map-container svelte-njbu1f">
+								<div class="map-view svelte-njbu1f"></div>
+							</div><!---->
+							<div class="absolute top-4 left-4 z-10"><!--[!--><button data-slot="button"
+									class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5 bg-vintage-parchment/90 backdrop-blur-sm border-vintage-navy/30 text-vintage-navy hover:bg-vintage-parchment shadow-md"
+									type="button"><span class="text-xs font-semibold">Show 1893 Map</span><!----></button><!--]--><!---->
+							</div>
+						</div>
+						<div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2"><!----><!--$s38--><!--[!-->
+							<div data-slot="scroll-area" class="relative w-full whitespace-nowrap py-2" id="bits-s38" dir="ltr"
+								style="position: relative; --bits-scroll-area-corner-height: 0px; --bits-scroll-area-corner-width: 0px;"
+								data-scroll-area-root=""><!----><!--$s39-->
+								<div data-slot="scroll-area-viewport"
+									class="ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1"
+									id="bits-s39" style="overflow-x: hidden; overflow-y: hidden;" data-scroll-area-viewport="">
+									<div id="bits-2" data-scroll-area-content="" style="min-width: undefined;">
+										<div class="flex md:justify-center md:items-center gap-2"><!--[--><!--[!--><button
+												data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s40--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s40" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s41--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s41" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>Jabez Wilson's Commute</span><!---->
+											</button><!--]--><!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s42--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s42" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s43--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s43" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s44--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s44" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s45--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s45" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>To Saxe-Coburg Square &amp; Concert</span><!---->
+											</button><!--]--><!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s46--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s46" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s47--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s47" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>Holmes goes home</span><!---->
+											</button><!--]--><!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s48--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s48" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s49--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s49" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>Watson's goes home</span><!---->
+											</button><!--]--><!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s50--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s50" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s51--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s51" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>Watson's Evening Journey</span><!---->
+											</button><!--]--><!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button"><!--[-->
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s52--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s52" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s53--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s53" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s54--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s54" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s55--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s55" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s56--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s56" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s57--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s57" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/merryweather.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s58--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-parchment/50"
+														id="bits-s58" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s59--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s59" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/jones.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div><!--]--> <span>Catching John Clay</span><!---->
+											</button><!--]--><!--]--> <!--[!--><button data-slot="button"
+												class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex items-center justify-center whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs h-8 px-3 has-[>svg]:px-2.5 shrink-0 rounded-xs text-[0.65rem] gap-1.5 font-semibold bg-vintage-navy border-vintage-parchment/30 text-vintage-parchment hover:bg-vintage-gold hover:text-vintage-navy-dark hover:border-vintage-gold"
+												type="button">
+												<div class="flex -space-x-1.5"><!--[--><!----><!----><!--$s60--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+														id="bits-s60" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s61--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s61" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/holmes.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s62--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+														id="bits-s62" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s63--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s63" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/watson.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!----><!----><!--$s64--><!--[!-->
+													<div data-slot="avatar"
+														class="relative flex shrink-0 overflow-hidden rounded-full size-5 border border-vintage-navy-dark/50"
+														id="bits-s64" data-avatar-root="" data-status="loading">
+														<!----><!----><!--$s65--><!--[!--><img data-slot="avatar-image"
+															class="aspect-square size-full" alt="" id="bits-s65" style="display: none;"
+															data-status="loading" data-avatar-image="" src="/map/sprite/icons/jabez.png"
+															onload="this.__e=event" onerror="this.__e=event" /><!--]--><!----><!----><!---->
+													</div>
+													<!--]--><!----><!----><!--]-->
+												</div> <span>All</span><!---->
+											</button><!--]--><!----></div><!----><!---->
+									</div>
+								</div><!----> <!--[!--><!--]-->
+								<!--[--><!----><!--$s66--><!--[--><!--[!--><!--]--><!--]--><!----><!--]-->
+								<!----><!--$s67--><!--[!--><!--]--><!----><!---->
+							</div><!--]--><!----><!---->
+						</div><!----><!---->
+					</div><!--]--><!----><!----> <!----><!----><!--$s68--><!--[!-->
+					<div data-slot="tabs-content" class="outline-none flex-1 overflow-y-auto bg-vintage-parchment" id="bits-s68"
+						role="tabpanel" hidden tabindex="0" data-value="info" data-state="inactive" data-orientation="horizontal"
+						data-tabs-content="">
+						<div
+							class="flex flex-col justify-center items-center h-full overflow-y-hidden p-5 font-[var(--font-playfair)] bg-vintage-parchment-light text-vintage-navy border-double border-4 border-vintage-brown/20">
+							<div class="text-center mb-6 border-b border-vintage-navy/10 pb-4">
+								<h1 class="font-bold text-xl leading-tight text-vintage-navy mix-blend-multiply">Regarding Sources &amp;
+									Method</h1>
+								<div class="mt-3"><a href="https://aman.bh/blog/2026/mapping-the-red-headed-league"
+										class="group inline-flex flex-col items-center"><span
+											class="text-[0.6rem] font-bold tracking-widest uppercase text-vintage-navy group-hover:text-vintage-crimson transition-colors border-b border-vintage-navy/30 group-hover:border-vintage-crimson pb-0.5">Read
+											the full article</span> <span
+											class="text-[0.5rem] italic text-vintage-brown/60 mt-0.5 group-hover:text-vintage-crimson/70">(External)</span></a>
+								</div>
+								<p class="text-[0.65rem] text-balance leading-relaxed text-vintage-navy/80 font-serif px-2 my-4 italic">
+									The full report details the work required to map this story,
+									cross-referencing railway timetables, correcting Dr. Watson's geographical
+									errors, and layering 1893 survey data over the modern street network to
+									understand where and how the characters move through London.</p>
+							</div>
+							<section class="mb-6">
+								<div class="flex items-center justify-center gap-2 mb-3">
+									<dl class="space-y-3 px-2">
+										<div class="text-center">
+											<dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">H.M. Ordnance Survey
+											</dt>
+											<dd
+												class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">
+												London Sheet VII, 1893 Revision via National Library of Scotland</dd>
+										</div>
+										<div class="text-center mt-2">
+											<dt class="text-[0.7rem] font-bold text-vintage-navy tracking-wide uppercase">OpenStreetMap</dt>
+											<dd
+												class="text-[0.6rem] italic text-vintage-brown/80 font-serif border-t border-vintage-brown/10 inline-block px-2 mt-0.5">
+												via contributors</dd>
+										</div>
+									</dl>
+								</div>
+							</section>
+							<footer class="mt-auto pt-5 border-t-2 border-double border-vintage-brown/20 text-center">
+								<p class="text-[0.5rem] tracking-[0.2em] uppercase text-vintage-brown/70 mb-1">Compiled by</p>
+								<p
+									class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30">
+									Dr. John Watson &amp;</p> <a href="https://aman.bh"
+									class="font-serif text-sm italic text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30 underline decoration-1 underline-offset-4">Aman
+									Bhargava</a>
+								<div
+									class="flex justify-center items-center gap-2 mt-3 text-[0.5rem] text-vintage-brown/60 uppercase tracking-widest">
+									<span>Loc. Bangalore</span> <span>•</span> <span>MMXXV</span>
+								</div>
+							</footer>
+						</div><!---->
+					</div><!--]--><!----><!----><!---->
+				</div><!--]--><!----><!---->
+			</div>
+			<footer
+				class="shrink-0 md:hidden flex items-center justify-between md:flex-row flex-col gap-1 py-2 px-3 border-t border-vintage-navy/30 bg-vintage-parchment text-[0.55rem] text-vintage-brown">
+				<span class="font-bold text-vintage-navy">MDCCCXC · <em>Mapping The Red-Headed League</em> by Dr. John Watson
+					&amp; <a href="https://aman.bh" class="text-vintage-crimson hover:underline">Aman Bhargava</a></span> <a
+					href="https://aman.bh/blog/2026/mapping-the-red-headed-league"
+					class="text-vintage-crimson hover:underline">Read the full article →</a>
+			</footer>
+		</div><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 
-					const element = document.currentScript.parentElement;
+		<script>
+			{
+				__sveltekit_9oy4xk = {
+					base: new URL(".", location).pathname.slice(0, -1)
+				};
 
-					Promise.all([
-						import("./_app/immutable/entry/start.t2gi1oPZ.js"),
-						import("./_app/immutable/entry/app.KniQMWZE.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data: [null,null],
-							form: null,
-							error: null
-						});
+				const element = document.currentScript.parentElement;
+
+				Promise.all([
+					import("./_app/immutable/entry/start.t2gi1oPZ.js"),
+					import("./_app/immutable/entry/app.KniQMWZE.js")
+				]).then(([kit, app]) => {
+					kit.start(app, element, {
+						node_ids: [0, 2],
+						data: [null, null],
+						form: null,
+						error: null
 					});
-				}
-			</script>
-		</div>
+				});
+			}
+		</script>
+	</div>
 </body>
 
 </html>
