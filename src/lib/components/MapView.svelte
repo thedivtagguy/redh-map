@@ -105,12 +105,13 @@
 					if (layer.id && layer.source) {
 						const sourceId = layer.id.replace('-layer', '');
 						map.addSource(sourceId, layer.source);
+						// Insert OS layer before tracks so it appears underneath them
 						map.addLayer({
 							id: layer.id,
 							type: 'raster',
 							source: sourceId,
 							paint: { 'raster-opacity': 0 }
-						});
+						}, 'track-jabez-commute'); // Insert before first track layer
 					}
 				}
 			}
