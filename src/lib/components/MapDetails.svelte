@@ -89,6 +89,11 @@
     >
       Aman Bhargava
     </a>
+    <p
+      class="font-serif text-[0.5rem] mt-2 uppercase text-vintage-navy hover:text-vintage-crimson transition-colors decoration-vintage-crimson/30 underline decoration-1 underline-offset-4"
+    >
+      <a href="https://github.com/thedivtagguy/redh-map">Source Code</a>
+    </p>
     <div
       class="flex justify-center items-center gap-2 mt-3 text-[0.5rem] text-vintage-brown/60 uppercase tracking-widest"
     >
