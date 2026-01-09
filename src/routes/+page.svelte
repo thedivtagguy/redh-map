@@ -90,7 +90,7 @@
 		type: "website",
 		images: [
 			{
-				url: "https://aman.bh/projects/red-headed-league/og-image.png",
+				url: "https://redh-map.netlify.app/og-image.png",
 				width: 1200,
 				height: 630,
 				alt: "Mapping The Red-Headed League - Interactive Map",
@@ -103,7 +103,7 @@
 		title: "Mapping The Red-Headed League",
 		description:
 			"A map visualization of the movements and locations from 'The Red-Headed League'",
-		image: "https://aman.bh/projects/red-headed-league/og-image.png",
+		image: "https://redh-map.netlify.app/og-image.png",
 		imageAlt:
 			"Interactive map showing the paths of characters from The Red-Headed League",
 	}}
