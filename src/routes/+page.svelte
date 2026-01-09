@@ -132,9 +132,9 @@
 />
 
 {#snippet routeButtonsBar()}
-	<div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2">
-		<ScrollArea class="w-full whitespace-nowrap  py-2" orientation="horizontal">
-			<div class="flex md:justify-center md:items-center gap-2">
+	<div class="shrink-0 bg-transparent border-t border-vintage-gold/30 px-2 min-w-0">
+		<ScrollArea class="w-full whitespace-nowrap py-2" orientation="horizontal">
+			<div class="flex md:justify-center md:items-center gap-2 min-w-max">
 				{#each pathEntries as path}
 					{@const pathIcons = icons[path.id] || []}
 					{@const isActive = activePathId === path.id}
@@ -220,7 +220,7 @@
 		<div class="edge edge-w"></div>
 	</div>
 
-	<div class="hidden md:grid grid-cols-[280px_1fr_220px] flex-1 min-h-0 gap-0">
+	<div class="hidden md:grid grid-cols-[minmax(240px,280px)_minmax(0,1fr)_minmax(200px,220px)] flex-1 min-h-0 gap-0">
 		<aside
 			class="flex flex-col overflow-hidden border-r border-vintage-navy/30 bg-vintage-parchment"
 		>
