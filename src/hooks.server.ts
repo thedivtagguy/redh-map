@@ -1,6 +1,6 @@
 export async function handle({ event, resolve }) {
   if (import.meta.env.PROD) {
-    event.locals.base = config.baseURL;
+    event.locals.base = "https://redh-map.netlify.app";
   } else {
     event.locals.base = '';
   }
