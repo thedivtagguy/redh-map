@@ -62,8 +62,7 @@
 
 	function getAbsoluteMapStyle(style) {
 		if (!style || typeof style !== 'object') return style;
-		const origin = window.location.origin;
-		const toAbsolute = (url) => (!url?.startsWith('http') ? `${origin}${base}${url}` : url);
+		const toAbsolute = (url) => (!url?.startsWith('http') ? `${base}${url}` : url);
 
 		return {
 			...style,
