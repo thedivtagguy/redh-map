@@ -4,7 +4,8 @@
 	import 'maplibre-gl/dist/maplibre-gl.css';
 	import { browser } from '$app/environment';
 	import { Protocol } from 'pmtiles';
-	import { base } from '$app/paths';
+
+	const base = 'https://redh-map.netlify.app';
 
 	let { mapStyle, mapConfig = {}, currentState = null, showOSLayer = true } = $props();
 
