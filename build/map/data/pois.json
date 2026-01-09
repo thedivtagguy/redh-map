@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "pois",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "label": "Aldersgate Station", "known": true }, "geometry": { "type": "Point", "coordinates": [ -0.098014223850016, 51.520214214524572 ] } },
+{ "type": "Feature", "properties": { "label": "Charterhouse Square" }, "geometry": { "type": "Point", "coordinates": [ -0.098949507749424, 51.520901430292952 ] } },
+{ "type": "Feature", "properties": { "label": "King Edward Street" ,"known": true }, "geometry": { "type": "Point", "coordinates": [ -0.098566998775428, 51.516200656072719 ] } },
+{ "type": "Feature", "properties": { "label": "Poppins Court" }, "geometry": { "type": "Point", "coordinates": [ -0.1053716, 51.5144201 ] } },
+{ "type": "Feature", "properties": { "label": "St. James's Hall","known": true }, "geometry": { "type": "Point", "coordinates": [ -0.136679004822036, 51.509293094072724 ] } },
+{ "type": "Feature", "properties": { "label": "Watson's House" }, "geometry": { "type": "Point", "coordinates": [ -0.191135068493825, 51.502465146817705 ] } },
+{ "type": "Feature", "properties": { "label": "Baker Street","known": true }, "geometry": { "type": "Point", "coordinates": [ -0.158178522768575, 51.523258312194741 ] } },
+{ "type": "Feature", "properties": { "label": "Farringdon Station","known": true }, "geometry": { "type": "Point", "coordinates": [ -0.105169208464034, 51.52055890520127 ] } },
+{ "type": "Feature", "properties": { "label": "Hyde Park","known": true }, "geometry": { "type": "Point", "coordinates": [ -0.16991606366963, 51.508206995800528 ] } }
+]
+}
