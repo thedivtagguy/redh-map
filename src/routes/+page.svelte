@@ -200,7 +200,7 @@
 </svelte:head>
 
 <div
-	class="flex flex-col h-screen w-screen overflow-hidden bg-vintage-parchment text-vintage-navy p-[var(--frame-border-width)]"
+	class="flex flex-col h-[100dvh] w-screen overflow-hidden bg-vintage-parchment text-vintage-navy p-[var(--frame-border-width)]"
 >
 	<div class="border-frame">
 		<div class="corner corner-nw"></div>
