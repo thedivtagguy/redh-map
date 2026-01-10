@@ -1,12 +1,15 @@
 #!/bin/bash
 set -euo pipefail
 
+# Change to script directory so it can be run from anywhere
+cd "$(dirname "$0")"
+
 BBOX="51.483600,-0.209169,51.533762,-0.060854"
 PMTILES_OUT="features.pmtiles"
 TIMEOUT=300
-LAYERS=("buildings" "parks" "paths" "stations" "trees" "construction" "platforms")
-# POIs and tracks are loaded directly as GeoJSON sources in the map style
-STATIC_LAYERS=("railways")
+LAYERS=("buildings" "parks" "paths" "stations" "trees" "construction")
+# POIs, tracks, platforms, and railways are loaded from static data
+STATIC_LAYERS=("railways" "platforms")
 
 get_query() {
     case "$1" in
@@ -16,8 +19,6 @@ get_query() {
         stations)      echo "node[\"railway\"=\"station\"][\"station\"=\"subway\"]($BBOX); way[\"railway\"=\"station\"][\"station\"=\"subway\"]($BBOX);" ;;
         trees)         echo "node[\"natural\"=\"tree\"]($BBOX);" ;;
         construction)  echo "way[\"landuse\"=\"construction\"]($BBOX); relation[\"landuse\"=\"construction\"]($BBOX); way[\"construction\"]($BBOX); relation[\"construction\"]($BBOX);" ;;
-        railways)      echo "way[\"railway\"=\"subway\"]($BBOX); relation[\"railway\"=\"subway\"]($BBOX); way[\"railway\"=\"rail\"][\"usage\"=\"main\"]($BBOX); relation[\"railway\"=\"rail\"][\"usage\"=\"main\"]($BBOX);" ;;
-        platforms)     echo "way[\"railway\"=\"platform\"]($BBOX); relation[\"railway\"=\"platform\"]($BBOX); way[\"public_transport\"=\"platform\"]($BBOX); relation[\"public_transport\"=\"platform\"]($BBOX);" ;;
     esac
 }
 
@@ -35,25 +36,6 @@ process_trees() {
     fi
 }
 
-process_platforms() {
-    local railways_file="data/london-railways-1890.json"
-    if [ -f "$railways_file" ] && [ -f "platforms.geojson" ] && command -v ogr2ogr &>/dev/null; then
-        echo "  - Filtering platforms to railway overlaps..."
-        # First, create a buffered version of the railways (buffer by ~50 meters in degrees)
-        ogr2ogr -f GeoJSON -dialect sqlite \
-            -sql "SELECT ST_Buffer(geometry, 0.0005) as geometry FROM railways" \
-            railways_buffered.geojson "$railways_file" -skipfailures 2>/dev/null
-
-        if [ -f "railways_buffered.geojson" ]; then
-            ogr2ogr -f GeoJSON "platforms_tmp.geojson" "platforms.geojson" \
-                -clipsrc "railways_buffered.geojson" -skipfailures 2>/dev/null && \
-                mv "platforms_tmp.geojson" "platforms.geojson"
-            rm -f railways_buffered.geojson
-        else
-            echo "  - Warning: Could not buffer railways, keeping all platforms"
-        fi
-    fi
-}
 
 process_stations() {
     if command -v jq &>/dev/null; then
@@ -103,7 +85,7 @@ for layer in "${LAYERS[@]}"; do
     fi
 done
 
-# Add static layers from data directory (railways only - pois and tracks are GeoJSON sources)
+# Add static layers from data directory
 for layer in "${STATIC_LAYERS[@]}"; do
     static_file="data/london-${layer}-1890.json"
     if [ -f "$static_file" ]; then
@@ -113,6 +95,7 @@ done
 
 if [ -n "$CMD_ARGS" ]; then
     echo ">> Building $PMTILES_OUT..."
+
     tippecanoe -o "$PMTILES_OUT" $CMD_ARGS \
         -z13 \
         -Z10 \
